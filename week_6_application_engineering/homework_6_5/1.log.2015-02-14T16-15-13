@@ -1,0 +1,23 @@
+2015-02-14T17:14:07.117+0100 [initandlisten] MongoDB starting : pid=9488 port=27017 dbpath=/home/michal/Projects/courses/mongodb/M101J/mongodb/replica_homework/rs1 64-bit host=ubuntu-pc
+2015-02-14T17:14:07.118+0100 [initandlisten] db version v2.6.7
+2015-02-14T17:14:07.118+0100 [initandlisten] git version: a7d57ad27c382de82e9cb93bf983a80fd9ac9899
+2015-02-14T17:14:07.118+0100 [initandlisten] build info: Linux build7.nj1.10gen.cc 2.6.32-431.3.1.el6.x86_64 #1 SMP Fri Jan 3 21:39:27 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2015-02-14T17:14:07.118+0100 [initandlisten] allocator: tcmalloc
+2015-02-14T17:14:07.118+0100 [initandlisten] options: { net: { port: 27017 }, processManagement: { fork: true }, replication: { oplogSizeMB: 64, replSet: "m101" }, storage: { dbPath: "/home/michal/Projects/courses/mongodb/M101J/mongodb/replica_homework/rs1", smallFiles: true }, systemLog: { destination: "file", path: "1.log" } }
+2015-02-14T17:14:07.119+0100 [initandlisten] exception in initAndListen: 10296 
+*********************************************************************
+ ERROR: dbpath (/home/michal/Projects/courses/mongodb/M101J/mongodb/replica_homework/rs1) does not exist.
+ Create this directory or give existing directory in --dbpath.
+ See http://dochub.mongodb.org/core/startingandstoppingmongo
+*********************************************************************
+, terminating
+2015-02-14T17:14:07.119+0100 [initandlisten] dbexit: 
+2015-02-14T17:14:07.119+0100 [initandlisten] shutdown: going to close listening sockets...
+2015-02-14T17:14:07.119+0100 [initandlisten] shutdown: going to flush diaglog...
+2015-02-14T17:14:07.119+0100 [initandlisten] shutdown: going to close sockets...
+2015-02-14T17:14:07.119+0100 [initandlisten] shutdown: waiting for fs preallocator...
+2015-02-14T17:14:07.119+0100 [initandlisten] shutdown: lock for final commit...
+2015-02-14T17:14:07.119+0100 [initandlisten] shutdown: final commit...
+2015-02-14T17:14:07.119+0100 [initandlisten] shutdown: closing all files...
+2015-02-14T17:14:07.119+0100 [initandlisten] closeAllFiles() finished
+2015-02-14T17:14:07.119+0100 [initandlisten] dbexit: really exiting now

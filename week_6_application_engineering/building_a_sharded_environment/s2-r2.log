@@ -1,0 +1,493 @@
+2015-02-14T13:20:22.200+0100 [initandlisten] MongoDB starting : pid=25262 port=57019 dbpath=/home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2 64-bit host=ubuntu-pc
+2015-02-14T13:20:22.200+0100 [initandlisten] db version v2.6.7
+2015-02-14T13:20:22.200+0100 [initandlisten] git version: a7d57ad27c382de82e9cb93bf983a80fd9ac9899
+2015-02-14T13:20:22.200+0100 [initandlisten] build info: Linux build7.nj1.10gen.cc 2.6.32-431.3.1.el6.x86_64 #1 SMP Fri Jan 3 21:39:27 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2015-02-14T13:20:22.200+0100 [initandlisten] allocator: tcmalloc
+2015-02-14T13:20:22.200+0100 [initandlisten] options: { net: { port: 57019 }, processManagement: { fork: true }, replication: { replSet: "s2" }, sharding: { clusterRole: "shardsvr" }, storage: { dbPath: "/home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2", smallFiles: true }, systemLog: { destination: "file", path: "s2-r2.log" } }
+2015-02-14T13:20:22.252+0100 [initandlisten] journal dir=/home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/journal
+2015-02-14T13:20:22.252+0100 [initandlisten] recover : no journal files present, no recovery needed
+2015-02-14T13:20:23.189+0100 [initandlisten] preallocateIsFaster=true 10.38
+2015-02-14T13:20:23.723+0100 [initandlisten] preallocateIsFaster=true 3.94
+2015-02-14T13:20:25.316+0100 [initandlisten] preallocateIsFaster=true 4.92
+2015-02-14T13:20:25.316+0100 [initandlisten] preallocateIsFaster check took 3.064 secs
+2015-02-14T13:20:25.316+0100 [initandlisten] preallocating a journal file /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/journal/prealloc.0
+2015-02-14T13:20:25.756+0100 [initandlisten] preallocating a journal file /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/journal/prealloc.1
+2015-02-14T13:20:26.465+0100 [initandlisten] preallocating a journal file /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/journal/prealloc.2
+2015-02-14T13:20:26.984+0100 [initandlisten] allocating new ns file /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/local.ns, filling with zeroes...
+2015-02-14T13:20:27.066+0100 [FileAllocator] allocating new datafile /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/local.0, filling with zeroes...
+2015-02-14T13:20:27.066+0100 [FileAllocator] creating directory /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/_tmp
+2015-02-14T13:20:27.095+0100 [FileAllocator] done allocating datafile /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/local.0, size: 16MB,  took 0.013 secs
+2015-02-14T13:20:27.095+0100 [initandlisten] build index on: local.startup_log properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "local.startup_log" }
+2015-02-14T13:20:27.095+0100 [initandlisten] 	 added index to empty collection
+2015-02-14T13:20:27.096+0100 [initandlisten] command local.$cmd command: create { create: "startup_log", size: 10485760, capped: true } ntoreturn:1 keyUpdates:0 numYields:0  reslen:37 111ms
+2015-02-14T13:20:27.096+0100 [initandlisten] waiting for connections on port 57019
+2015-02-14T13:20:27.096+0100 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+2015-02-14T13:20:27.096+0100 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+2015-02-14T13:20:28.097+0100 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+2015-02-14T13:20:29.097+0100 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+2015-02-14T13:20:30.097+0100 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+2015-02-14T13:20:31.097+0100 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+2015-02-14T13:20:32.072+0100 [initandlisten] connection accepted from 127.0.0.1:36370 #1 (1 connection now open)
+2015-02-14T13:20:32.072+0100 [conn1] end connection 127.0.0.1:36370 (0 connections now open)
+2015-02-14T13:20:32.076+0100 [initandlisten] connection accepted from 127.0.0.1:36372 #2 (1 connection now open)
+2015-02-14T13:20:32.097+0100 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+2015-02-14T13:20:33.098+0100 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+2015-02-14T13:20:33.299+0100 [initandlisten] connection accepted from 127.0.0.1:36375 #3 (2 connections now open)
+2015-02-14T13:20:33.299+0100 [conn3] end connection 127.0.0.1:36375 (1 connection now open)
+2015-02-14T13:20:34.098+0100 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+2015-02-14T13:20:35.098+0100 [rsStart] trying to contact localhost:57017
+2015-02-14T13:20:35.100+0100 [rsStart] replSet I am localhost:57019
+2015-02-14T13:20:35.100+0100 [rsStart] replSet got config version 1 from a remote, saving locally
+2015-02-14T13:20:35.100+0100 [rsStart] replSet info saving a newer config version to local.system.replset: { _id: "s2", version: 1, members: [ { _id: 0, host: "localhost:57017" }, { _id: 1, host: "localhost:57018" }, { _id: 2, host: "localhost:57019" } ] }
+2015-02-14T13:20:35.100+0100 [rsStart] build index on: local.system.replset properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "local.system.replset" }
+2015-02-14T13:20:35.100+0100 [rsStart] 	 added index to empty collection
+2015-02-14T13:20:35.100+0100 [rsStart] replSet saveConfigLocally done
+2015-02-14T13:20:35.101+0100 [rsStart] build index on: local.me properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "local.me" }
+2015-02-14T13:20:35.101+0100 [rsStart] 	 added index to empty collection
+2015-02-14T13:20:35.101+0100 [rsStart] replSet STARTUP2
+2015-02-14T13:20:35.101+0100 [rsSync] ******
+2015-02-14T13:20:35.101+0100 [rsSync] creating replication oplog of size: 990MB...
+2015-02-14T13:20:35.101+0100 [FileAllocator] allocating new datafile /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/local.1, filling with zeroes...
+2015-02-14T13:20:35.300+0100 [initandlisten] connection accepted from 127.0.0.1:36379 #4 (2 connections now open)
+2015-02-14T13:20:35.352+0100 [FileAllocator] done allocating datafile /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/local.1, size: 511MB,  took 0.25 secs
+2015-02-14T13:20:35.352+0100 [FileAllocator] allocating new datafile /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/local.2, filling with zeroes...
+2015-02-14T13:20:36.233+0100 [FileAllocator] done allocating datafile /home/michal/Projects/courses/mongodb/M101J/mongodb/shraded/shrad2/rs2/local.2, size: 511MB,  took 0.881 secs
+2015-02-14T13:20:36.515+0100 [rsSync] ******
+2015-02-14T13:20:36.515+0100 [rsSync] replSet initial sync pending
+2015-02-14T13:20:36.515+0100 [rsSync] replSet initial sync need a member to be primary or secondary to do our initial sync
+2015-02-14T13:20:37.100+0100 [rsHealthPoll] replSet member localhost:57017 is up
+2015-02-14T13:20:37.100+0100 [rsHealthPoll] replSet member localhost:57017 is now in state SECONDARY
+2015-02-14T13:20:37.100+0100 [rsHealthPoll] replSet member localhost:57018 is up
+2015-02-14T13:20:37.100+0100 [rsHealthPoll] replSet member localhost:57018 is now in state STARTUP2
+2015-02-14T13:20:42.317+0100 [conn2] replSet info voting yea for localhost:57017 (0)
+2015-02-14T13:20:43.101+0100 [rsHealthPoll] replSet member localhost:57017 is now in state PRIMARY
+2015-02-14T13:20:51.102+0100 [rsHealthPoll] replSet member localhost:57018 is now in state SECONDARY
+2015-02-14T13:20:52.516+0100 [rsSync] replSet initial sync pending
+2015-02-14T13:20:52.516+0100 [rsSync] replSet syncing to: localhost:57017
+2015-02-14T13:20:52.517+0100 [rsSync] build index on: local.replset.minvalid properties: { v: 1, key: { _id: 1 }, name: "_id_", ns: "local.replset.minvalid" }
+2015-02-14T13:20:52.517+0100 [rsSync] 	 added index to empty collection
+2015-02-14T13:20:52.517+0100 [rsSync] replSet initial sync drop all databases
+2015-02-14T13:20:52.517+0100 [rsSync] dropAllDatabasesExceptLocal 1
+2015-02-14T13:20:52.517+0100 [rsSync] replSet initial sync clone all databases
+2015-02-14T13:20:52.518+0100 [rsSync] replSet initial sync cloning db: admin
+2015-02-14T13:20:52.518+0100 [rsSync] replSet initial sync data copy, starting syncup
+2015-02-14T13:20:52.518+0100 [rsSync] oplog sync 1 of 3
+2015-02-14T13:20:52.518+0100 [rsSync] oplog sync 2 of 3
+2015-02-14T13:20:52.518+0100 [rsSync] replSet initial sync building indexes
+2015-02-14T13:20:52.518+0100 [rsSync] replSet initial sync cloning indexes for : admin
+2015-02-14T13:20:52.519+0100 [rsSync] oplog sync 3 of 3
+2015-02-14T13:20:52.519+0100 [rsSync] replSet initial sync finishing up
+2015-02-14T13:20:52.539+0100 [rsSync] replSet set minValid=54df3d90:1
+2015-02-14T13:20:52.540+0100 [rsSync] replSet RECOVERING
+2015-02-14T13:20:52.540+0100 [rsSync] replSet initial sync done
+2015-02-14T13:20:53.102+0100 [rsBackgroundSync] replSet syncing to: localhost:57017
+2015-02-14T13:20:53.102+0100 [rsBackgroundSync] replset setting syncSourceFeedback to localhost:57017
+2015-02-14T13:20:53.540+0100 [rsSync] replSet SECONDARY
+2015-02-14T13:21:02.319+0100 [conn2] end connection 127.0.0.1:36372 (1 connection now open)
+2015-02-14T13:21:02.319+0100 [initandlisten] connection accepted from 127.0.0.1:36428 #5 (3 connections now open)
+2015-02-14T13:21:03.303+0100 [conn4] end connection 127.0.0.1:36379 (1 connection now open)
+2015-02-14T13:21:03.303+0100 [initandlisten] connection accepted from 127.0.0.1:36429 #6 (2 connections now open)
+2015-02-14T13:21:26.984+0100 [clientcursormon] mem (MB) res:32 virt:2626
+2015-02-14T13:21:26.984+0100 [clientcursormon]  mapped (incl journal view):2110
+2015-02-14T13:21:26.984+0100 [clientcursormon]  connections:2
+2015-02-14T13:21:26.984+0100 [clientcursormon]  replication threads:32
+2015-02-14T13:21:32.322+0100 [conn5] end connection 127.0.0.1:36428 (1 connection now open)
+2015-02-14T13:21:32.322+0100 [initandlisten] connection accepted from 127.0.0.1:36454 #7 (2 connections now open)
+2015-02-14T13:21:33.307+0100 [conn6] end connection 127.0.0.1:36429 (1 connection now open)
+2015-02-14T13:21:33.307+0100 [initandlisten] connection accepted from 127.0.0.1:36455 #8 (2 connections now open)
+2015-02-14T13:21:48.015+0100 [initandlisten] connection accepted from 127.0.0.1:36485 #9 (3 connections now open)
+2015-02-14T13:21:57.031+0100 [initandlisten] connection accepted from 127.0.0.1:36496 #10 (4 connections now open)
+2015-02-14T13:22:02.325+0100 [conn7] end connection 127.0.0.1:36454 (3 connections now open)
+2015-02-14T13:22:02.325+0100 [initandlisten] connection accepted from 127.0.0.1:36503 #11 (5 connections now open)
+2015-02-14T13:22:03.310+0100 [conn8] end connection 127.0.0.1:36455 (3 connections now open)
+2015-02-14T13:22:03.310+0100 [initandlisten] connection accepted from 127.0.0.1:36504 #12 (4 connections now open)
+2015-02-14T13:22:32.329+0100 [conn11] end connection 127.0.0.1:36503 (3 connections now open)
+2015-02-14T13:22:32.329+0100 [initandlisten] connection accepted from 127.0.0.1:36523 #13 (4 connections now open)
+2015-02-14T13:22:33.314+0100 [conn12] end connection 127.0.0.1:36504 (3 connections now open)
+2015-02-14T13:22:33.314+0100 [initandlisten] connection accepted from 127.0.0.1:36524 #14 (5 connections now open)
+2015-02-14T13:23:02.333+0100 [conn13] end connection 127.0.0.1:36523 (3 connections now open)
+2015-02-14T13:23:02.333+0100 [initandlisten] connection accepted from 127.0.0.1:36543 #15 (5 connections now open)
+2015-02-14T13:23:03.317+0100 [conn14] end connection 127.0.0.1:36524 (3 connections now open)
+2015-02-14T13:23:03.317+0100 [initandlisten] connection accepted from 127.0.0.1:36544 #16 (4 connections now open)
+2015-02-14T13:23:32.336+0100 [conn15] end connection 127.0.0.1:36543 (3 connections now open)
+2015-02-14T13:23:32.336+0100 [initandlisten] connection accepted from 127.0.0.1:36562 #17 (4 connections now open)
+2015-02-14T13:23:33.321+0100 [conn16] end connection 127.0.0.1:36544 (3 connections now open)
+2015-02-14T13:23:33.321+0100 [initandlisten] connection accepted from 127.0.0.1:36563 #18 (4 connections now open)
+2015-02-14T13:24:02.339+0100 [conn17] end connection 127.0.0.1:36562 (3 connections now open)
+2015-02-14T13:24:02.339+0100 [initandlisten] connection accepted from 127.0.0.1:36585 #19 (5 connections now open)
+2015-02-14T13:24:03.324+0100 [conn18] end connection 127.0.0.1:36563 (3 connections now open)
+2015-02-14T13:24:03.324+0100 [initandlisten] connection accepted from 127.0.0.1:36588 #20 (4 connections now open)
+2015-02-14T13:24:32.343+0100 [conn19] end connection 127.0.0.1:36585 (3 connections now open)
+2015-02-14T13:24:32.343+0100 [initandlisten] connection accepted from 127.0.0.1:36610 #21 (4 connections now open)
+2015-02-14T13:24:33.328+0100 [conn20] end connection 127.0.0.1:36588 (3 connections now open)
+2015-02-14T13:24:33.328+0100 [initandlisten] connection accepted from 127.0.0.1:36611 #22 (4 connections now open)
+2015-02-14T13:25:02.346+0100 [conn21] end connection 127.0.0.1:36610 (3 connections now open)
+2015-02-14T13:25:02.346+0100 [initandlisten] connection accepted from 127.0.0.1:36630 #23 (5 connections now open)
+2015-02-14T13:25:03.332+0100 [conn22] end connection 127.0.0.1:36611 (3 connections now open)
+2015-02-14T13:25:03.332+0100 [initandlisten] connection accepted from 127.0.0.1:36631 #24 (5 connections now open)
+2015-02-14T13:25:32.350+0100 [conn23] end connection 127.0.0.1:36630 (3 connections now open)
+2015-02-14T13:25:32.350+0100 [initandlisten] connection accepted from 127.0.0.1:36649 #25 (4 connections now open)
+2015-02-14T13:25:33.335+0100 [conn24] end connection 127.0.0.1:36631 (3 connections now open)
+2015-02-14T13:25:33.335+0100 [initandlisten] connection accepted from 127.0.0.1:36650 #26 (5 connections now open)
+2015-02-14T13:26:02.354+0100 [conn25] end connection 127.0.0.1:36649 (3 connections now open)
+2015-02-14T13:26:02.354+0100 [initandlisten] connection accepted from 127.0.0.1:36669 #27 (5 connections now open)
+2015-02-14T13:26:03.339+0100 [conn26] end connection 127.0.0.1:36650 (3 connections now open)
+2015-02-14T13:26:03.339+0100 [initandlisten] connection accepted from 127.0.0.1:36670 #28 (4 connections now open)
+2015-02-14T13:26:26.991+0100 [clientcursormon] mem (MB) res:32 virt:2628
+2015-02-14T13:26:26.991+0100 [clientcursormon]  mapped (incl journal view):2110
+2015-02-14T13:26:26.991+0100 [clientcursormon]  connections:4
+2015-02-14T13:26:26.991+0100 [clientcursormon]  replication threads:32
+2015-02-14T13:26:32.357+0100 [conn27] end connection 127.0.0.1:36669 (3 connections now open)
+2015-02-14T13:26:32.357+0100 [initandlisten] connection accepted from 127.0.0.1:36687 #29 (5 connections now open)
+2015-02-14T13:26:33.342+0100 [conn28] end connection 127.0.0.1:36670 (3 connections now open)
+2015-02-14T13:26:33.342+0100 [initandlisten] connection accepted from 127.0.0.1:36688 #30 (4 connections now open)
+2015-02-14T13:26:48.015+0100 [conn9] command admin.$cmd command: writebacklisten { writebacklisten: ObjectId('54df3d9ec02eeac1965dbad3') } ntoreturn:1 keyUpdates:0 numYields:0  reslen:44 300000ms
+2015-02-14T13:27:02.361+0100 [conn29] end connection 127.0.0.1:36687 (3 connections now open)
+2015-02-14T13:27:02.361+0100 [initandlisten] connection accepted from 127.0.0.1:36708 #31 (5 connections now open)
+2015-02-14T13:27:03.346+0100 [conn30] end connection 127.0.0.1:36688 (3 connections now open)
+2015-02-14T13:27:03.346+0100 [initandlisten] connection accepted from 127.0.0.1:36709 #32 (4 connections now open)
+2015-02-14T13:27:32.364+0100 [conn31] end connection 127.0.0.1:36708 (3 connections now open)
+2015-02-14T13:27:32.364+0100 [initandlisten] connection accepted from 127.0.0.1:36729 #33 (4 connections now open)
+2015-02-14T13:27:33.349+0100 [conn32] end connection 127.0.0.1:36709 (3 connections now open)
+2015-02-14T13:27:33.349+0100 [initandlisten] connection accepted from 127.0.0.1:36730 #34 (5 connections now open)
+2015-02-14T13:28:02.368+0100 [conn33] end connection 127.0.0.1:36729 (3 connections now open)
+2015-02-14T13:28:02.368+0100 [initandlisten] connection accepted from 127.0.0.1:36751 #35 (4 connections now open)
+2015-02-14T13:28:03.353+0100 [conn34] end connection 127.0.0.1:36730 (3 connections now open)
+2015-02-14T13:28:03.353+0100 [initandlisten] connection accepted from 127.0.0.1:36752 #36 (4 connections now open)
+2015-02-14T13:28:32.371+0100 [conn35] end connection 127.0.0.1:36751 (3 connections now open)
+2015-02-14T13:28:32.372+0100 [initandlisten] connection accepted from 127.0.0.1:36769 #37 (4 connections now open)
+2015-02-14T13:28:33.357+0100 [conn36] end connection 127.0.0.1:36752 (3 connections now open)
+2015-02-14T13:28:33.357+0100 [initandlisten] connection accepted from 127.0.0.1:36770 #38 (5 connections now open)
+2015-02-14T13:29:02.375+0100 [conn37] end connection 127.0.0.1:36769 (3 connections now open)
+2015-02-14T13:29:02.375+0100 [initandlisten] connection accepted from 127.0.0.1:36793 #39 (4 connections now open)
+2015-02-14T13:29:03.360+0100 [conn38] end connection 127.0.0.1:36770 (3 connections now open)
+2015-02-14T13:29:03.360+0100 [initandlisten] connection accepted from 127.0.0.1:36794 #40 (4 connections now open)
+2015-02-14T13:29:32.379+0100 [conn39] end connection 127.0.0.1:36793 (3 connections now open)
+2015-02-14T13:29:32.379+0100 [initandlisten] connection accepted from 127.0.0.1:36812 #41 (4 connections now open)
+2015-02-14T13:29:33.363+0100 [conn40] end connection 127.0.0.1:36794 (3 connections now open)
+2015-02-14T13:29:33.364+0100 [initandlisten] connection accepted from 127.0.0.1:36813 #42 (4 connections now open)
+2015-02-14T13:30:02.382+0100 [conn41] end connection 127.0.0.1:36812 (3 connections now open)
+2015-02-14T13:30:02.383+0100 [initandlisten] connection accepted from 127.0.0.1:36832 #43 (5 connections now open)
+2015-02-14T13:30:03.367+0100 [conn42] end connection 127.0.0.1:36813 (3 connections now open)
+2015-02-14T13:30:03.367+0100 [initandlisten] connection accepted from 127.0.0.1:36833 #44 (4 connections now open)
+2015-02-14T13:30:32.386+0100 [conn43] end connection 127.0.0.1:36832 (3 connections now open)
+2015-02-14T13:30:32.386+0100 [initandlisten] connection accepted from 127.0.0.1:36852 #45 (4 connections now open)
+2015-02-14T13:30:33.371+0100 [conn44] end connection 127.0.0.1:36833 (3 connections now open)
+2015-02-14T13:30:33.371+0100 [initandlisten] connection accepted from 127.0.0.1:36853 #46 (4 connections now open)
+2015-02-14T13:31:02.390+0100 [conn45] end connection 127.0.0.1:36852 (3 connections now open)
+2015-02-14T13:31:02.390+0100 [initandlisten] connection accepted from 127.0.0.1:36883 #47 (4 connections now open)
+2015-02-14T13:31:03.374+0100 [conn46] end connection 127.0.0.1:36853 (3 connections now open)
+2015-02-14T13:31:03.374+0100 [initandlisten] connection accepted from 127.0.0.1:36884 #48 (5 connections now open)
+2015-02-14T13:31:26.998+0100 [clientcursormon] mem (MB) res:32 virt:2628
+2015-02-14T13:31:26.998+0100 [clientcursormon]  mapped (incl journal view):2110
+2015-02-14T13:31:26.998+0100 [clientcursormon]  connections:4
+2015-02-14T13:31:26.998+0100 [clientcursormon]  replication threads:32
+2015-02-14T13:31:32.394+0100 [conn47] end connection 127.0.0.1:36883 (3 connections now open)
+2015-02-14T13:31:32.394+0100 [initandlisten] connection accepted from 127.0.0.1:36902 #49 (4 connections now open)
+2015-02-14T13:31:33.378+0100 [conn48] end connection 127.0.0.1:36884 (3 connections now open)
+2015-02-14T13:31:33.378+0100 [initandlisten] connection accepted from 127.0.0.1:36903 #50 (5 connections now open)
+2015-02-14T13:31:48.015+0100 [conn9] command admin.$cmd command: writebacklisten { writebacklisten: ObjectId('54df3d9ec02eeac1965dbad3') } ntoreturn:1 keyUpdates:0 numYields:0  reslen:44 300000ms
+2015-02-14T13:32:02.398+0100 [conn49] end connection 127.0.0.1:36902 (3 connections now open)
+2015-02-14T13:32:02.398+0100 [initandlisten] connection accepted from 127.0.0.1:36924 #51 (4 connections now open)
+2015-02-14T13:32:03.382+0100 [conn50] end connection 127.0.0.1:36903 (3 connections now open)
+2015-02-14T13:32:03.382+0100 [initandlisten] connection accepted from 127.0.0.1:36925 #52 (4 connections now open)
+2015-02-14T13:32:32.401+0100 [conn51] end connection 127.0.0.1:36924 (3 connections now open)
+2015-02-14T13:32:32.401+0100 [initandlisten] connection accepted from 127.0.0.1:36942 #53 (5 connections now open)
+2015-02-14T13:32:33.385+0100 [conn52] end connection 127.0.0.1:36925 (3 connections now open)
+2015-02-14T13:32:33.385+0100 [initandlisten] connection accepted from 127.0.0.1:36943 #54 (4 connections now open)
+2015-02-14T13:33:02.405+0100 [conn53] end connection 127.0.0.1:36942 (3 connections now open)
+2015-02-14T13:33:02.405+0100 [initandlisten] connection accepted from 127.0.0.1:36965 #55 (5 connections now open)
+2015-02-14T13:33:03.389+0100 [conn54] end connection 127.0.0.1:36943 (3 connections now open)
+2015-02-14T13:33:03.389+0100 [initandlisten] connection accepted from 127.0.0.1:36966 #56 (5 connections now open)
+2015-02-14T13:33:32.409+0100 [conn55] end connection 127.0.0.1:36965 (3 connections now open)
+2015-02-14T13:33:32.409+0100 [initandlisten] connection accepted from 127.0.0.1:36991 #57 (5 connections now open)
+2015-02-14T13:33:33.393+0100 [conn56] end connection 127.0.0.1:36966 (3 connections now open)
+2015-02-14T13:33:33.393+0100 [initandlisten] connection accepted from 127.0.0.1:36992 #58 (4 connections now open)
+2015-02-14T13:34:02.413+0100 [conn57] end connection 127.0.0.1:36991 (3 connections now open)
+2015-02-14T13:34:02.413+0100 [initandlisten] connection accepted from 127.0.0.1:37014 #59 (4 connections now open)
+2015-02-14T13:34:03.396+0100 [conn58] end connection 127.0.0.1:36992 (3 connections now open)
+2015-02-14T13:34:03.396+0100 [initandlisten] connection accepted from 127.0.0.1:37015 #60 (4 connections now open)
+2015-02-14T13:34:32.416+0100 [conn59] end connection 127.0.0.1:37014 (3 connections now open)
+2015-02-14T13:34:32.416+0100 [initandlisten] connection accepted from 127.0.0.1:37035 #61 (5 connections now open)
+2015-02-14T13:34:33.400+0100 [conn60] end connection 127.0.0.1:37015 (3 connections now open)
+2015-02-14T13:34:33.400+0100 [initandlisten] connection accepted from 127.0.0.1:37036 #62 (5 connections now open)
+2015-02-14T13:35:02.420+0100 [conn61] end connection 127.0.0.1:37035 (3 connections now open)
+2015-02-14T13:35:02.420+0100 [initandlisten] connection accepted from 127.0.0.1:37054 #63 (4 connections now open)
+2015-02-14T13:35:03.404+0100 [conn62] end connection 127.0.0.1:37036 (3 connections now open)
+2015-02-14T13:35:03.404+0100 [initandlisten] connection accepted from 127.0.0.1:37055 #64 (5 connections now open)
+2015-02-14T13:35:32.423+0100 [conn63] end connection 127.0.0.1:37054 (3 connections now open)
+2015-02-14T13:35:32.423+0100 [initandlisten] connection accepted from 127.0.0.1:37077 #65 (4 connections now open)
+2015-02-14T13:35:33.407+0100 [conn64] end connection 127.0.0.1:37055 (3 connections now open)
+2015-02-14T13:35:33.408+0100 [initandlisten] connection accepted from 127.0.0.1:37078 #66 (4 connections now open)
+2015-02-14T13:36:02.427+0100 [conn65] end connection 127.0.0.1:37077 (3 connections now open)
+2015-02-14T13:36:02.427+0100 [initandlisten] connection accepted from 127.0.0.1:37095 #67 (4 connections now open)
+2015-02-14T13:36:03.411+0100 [conn66] end connection 127.0.0.1:37078 (3 connections now open)
+2015-02-14T13:36:03.411+0100 [initandlisten] connection accepted from 127.0.0.1:37096 #68 (4 connections now open)
+2015-02-14T13:36:27.005+0100 [clientcursormon] mem (MB) res:32 virt:2628
+2015-02-14T13:36:27.005+0100 [clientcursormon]  mapped (incl journal view):2110
+2015-02-14T13:36:27.005+0100 [clientcursormon]  connections:4
+2015-02-14T13:36:27.005+0100 [clientcursormon]  replication threads:32
+2015-02-14T13:36:32.430+0100 [conn67] end connection 127.0.0.1:37095 (3 connections now open)
+2015-02-14T13:36:32.431+0100 [initandlisten] connection accepted from 127.0.0.1:37118 #69 (5 connections now open)
+2015-02-14T13:36:33.415+0100 [conn68] end connection 127.0.0.1:37096 (3 connections now open)
+2015-02-14T13:36:33.415+0100 [initandlisten] connection accepted from 127.0.0.1:37119 #70 (5 connections now open)
+2015-02-14T13:36:48.016+0100 [conn9] command admin.$cmd command: writebacklisten { writebacklisten: ObjectId('54df3d9ec02eeac1965dbad3') } ntoreturn:1 keyUpdates:0 numYields:0  reslen:44 300000ms
+2015-02-14T13:37:02.434+0100 [conn69] end connection 127.0.0.1:37118 (3 connections now open)
+2015-02-14T13:37:02.434+0100 [initandlisten] connection accepted from 127.0.0.1:37136 #71 (4 connections now open)
+2015-02-14T13:37:03.419+0100 [conn70] end connection 127.0.0.1:37119 (3 connections now open)
+2015-02-14T13:37:03.419+0100 [initandlisten] connection accepted from 127.0.0.1:37137 #72 (4 connections now open)
+2015-02-14T13:37:32.438+0100 [conn71] end connection 127.0.0.1:37136 (3 connections now open)
+2015-02-14T13:37:32.438+0100 [initandlisten] connection accepted from 127.0.0.1:37157 #73 (4 connections now open)
+2015-02-14T13:37:33.422+0100 [conn72] end connection 127.0.0.1:37137 (3 connections now open)
+2015-02-14T13:37:33.422+0100 [initandlisten] connection accepted from 127.0.0.1:37158 #74 (5 connections now open)
+2015-02-14T13:38:02.442+0100 [conn73] end connection 127.0.0.1:37157 (3 connections now open)
+2015-02-14T13:38:02.442+0100 [initandlisten] connection accepted from 127.0.0.1:37176 #75 (5 connections now open)
+2015-02-14T13:38:03.426+0100 [conn74] end connection 127.0.0.1:37158 (3 connections now open)
+2015-02-14T13:38:03.426+0100 [initandlisten] connection accepted from 127.0.0.1:37177 #76 (5 connections now open)
+2015-02-14T13:38:32.446+0100 [conn75] end connection 127.0.0.1:37176 (3 connections now open)
+2015-02-14T13:38:32.446+0100 [initandlisten] connection accepted from 127.0.0.1:37196 #77 (4 connections now open)
+2015-02-14T13:38:33.430+0100 [conn76] end connection 127.0.0.1:37177 (3 connections now open)
+2015-02-14T13:38:33.430+0100 [initandlisten] connection accepted from 127.0.0.1:37197 #78 (4 connections now open)
+2015-02-14T13:39:02.449+0100 [conn77] end connection 127.0.0.1:37196 (3 connections now open)
+2015-02-14T13:39:02.450+0100 [initandlisten] connection accepted from 127.0.0.1:37217 #79 (4 connections now open)
+2015-02-14T13:39:03.434+0100 [conn78] end connection 127.0.0.1:37197 (3 connections now open)
+2015-02-14T13:39:03.434+0100 [initandlisten] connection accepted from 127.0.0.1:37218 #80 (5 connections now open)
+2015-02-14T13:39:32.453+0100 [conn79] end connection 127.0.0.1:37217 (3 connections now open)
+2015-02-14T13:39:32.453+0100 [initandlisten] connection accepted from 127.0.0.1:37244 #81 (4 connections now open)
+2015-02-14T13:39:33.437+0100 [conn80] end connection 127.0.0.1:37218 (3 connections now open)
+2015-02-14T13:39:33.438+0100 [initandlisten] connection accepted from 127.0.0.1:37245 #82 (4 connections now open)
+2015-02-14T13:40:02.457+0100 [conn81] end connection 127.0.0.1:37244 (3 connections now open)
+2015-02-14T13:40:02.457+0100 [initandlisten] connection accepted from 127.0.0.1:37263 #83 (4 connections now open)
+2015-02-14T13:40:03.441+0100 [conn82] end connection 127.0.0.1:37245 (3 connections now open)
+2015-02-14T13:40:03.441+0100 [initandlisten] connection accepted from 127.0.0.1:37264 #84 (4 connections now open)
+2015-02-14T13:40:32.461+0100 [conn83] end connection 127.0.0.1:37263 (3 connections now open)
+2015-02-14T13:40:32.461+0100 [initandlisten] connection accepted from 127.0.0.1:37312 #85 (4 connections now open)
+2015-02-14T13:40:33.445+0100 [conn84] end connection 127.0.0.1:37264 (3 connections now open)
+2015-02-14T13:40:33.445+0100 [initandlisten] connection accepted from 127.0.0.1:37313 #86 (4 connections now open)
+2015-02-14T13:41:02.465+0100 [conn85] end connection 127.0.0.1:37312 (3 connections now open)
+2015-02-14T13:41:02.465+0100 [initandlisten] connection accepted from 127.0.0.1:37340 #87 (5 connections now open)
+2015-02-14T13:41:03.448+0100 [conn86] end connection 127.0.0.1:37313 (3 connections now open)
+2015-02-14T13:41:03.449+0100 [initandlisten] connection accepted from 127.0.0.1:37341 #88 (5 connections now open)
+2015-02-14T13:41:27.012+0100 [clientcursormon] mem (MB) res:32 virt:2628
+2015-02-14T13:41:27.012+0100 [clientcursormon]  mapped (incl journal view):2110
+2015-02-14T13:41:27.012+0100 [clientcursormon]  connections:4
+2015-02-14T13:41:27.012+0100 [clientcursormon]  replication threads:32
+2015-02-14T13:41:32.469+0100 [conn87] end connection 127.0.0.1:37340 (3 connections now open)
+2015-02-14T13:41:32.469+0100 [initandlisten] connection accepted from 127.0.0.1:37406 #89 (5 connections now open)
+2015-02-14T13:41:33.452+0100 [conn88] end connection 127.0.0.1:37341 (3 connections now open)
+2015-02-14T13:41:33.452+0100 [initandlisten] connection accepted from 127.0.0.1:37407 #90 (4 connections now open)
+2015-02-14T13:41:48.016+0100 [conn9] command admin.$cmd command: writebacklisten { writebacklisten: ObjectId('54df3d9ec02eeac1965dbad3') } ntoreturn:1 keyUpdates:0 numYields:0  reslen:44 300000ms
+2015-02-14T13:42:02.473+0100 [conn89] end connection 127.0.0.1:37406 (3 connections now open)
+2015-02-14T13:42:02.473+0100 [initandlisten] connection accepted from 127.0.0.1:37426 #91 (4 connections now open)
+2015-02-14T13:42:03.456+0100 [conn90] end connection 127.0.0.1:37407 (3 connections now open)
+2015-02-14T13:42:03.456+0100 [initandlisten] connection accepted from 127.0.0.1:37427 #92 (4 connections now open)
+2015-02-14T13:42:32.477+0100 [conn91] end connection 127.0.0.1:37426 (3 connections now open)
+2015-02-14T13:42:32.477+0100 [initandlisten] connection accepted from 127.0.0.1:37451 #93 (4 connections now open)
+2015-02-14T13:42:33.460+0100 [conn92] end connection 127.0.0.1:37427 (3 connections now open)
+2015-02-14T13:42:33.460+0100 [initandlisten] connection accepted from 127.0.0.1:37452 #94 (4 connections now open)
+2015-02-14T13:43:02.481+0100 [conn93] end connection 127.0.0.1:37451 (3 connections now open)
+2015-02-14T13:43:02.481+0100 [initandlisten] connection accepted from 127.0.0.1:37474 #95 (4 connections now open)
+2015-02-14T13:43:03.463+0100 [conn94] end connection 127.0.0.1:37452 (3 connections now open)
+2015-02-14T13:43:03.463+0100 [initandlisten] connection accepted from 127.0.0.1:37475 #96 (5 connections now open)
+2015-02-14T13:43:32.485+0100 [conn95] end connection 127.0.0.1:37474 (3 connections now open)
+2015-02-14T13:43:32.485+0100 [initandlisten] connection accepted from 127.0.0.1:37493 #97 (4 connections now open)
+2015-02-14T13:43:33.467+0100 [conn96] end connection 127.0.0.1:37475 (3 connections now open)
+2015-02-14T13:43:33.467+0100 [initandlisten] connection accepted from 127.0.0.1:37494 #98 (4 connections now open)
+2015-02-14T13:44:02.489+0100 [conn97] end connection 127.0.0.1:37493 (3 connections now open)
+2015-02-14T13:44:02.489+0100 [initandlisten] connection accepted from 127.0.0.1:37515 #99 (4 connections now open)
+2015-02-14T13:44:03.471+0100 [conn98] end connection 127.0.0.1:37494 (3 connections now open)
+2015-02-14T13:44:03.471+0100 [initandlisten] connection accepted from 127.0.0.1:37516 #100 (5 connections now open)
+2015-02-14T13:44:32.492+0100 [conn99] end connection 127.0.0.1:37515 (3 connections now open)
+2015-02-14T13:44:32.493+0100 [initandlisten] connection accepted from 127.0.0.1:37533 #101 (4 connections now open)
+2015-02-14T13:44:33.475+0100 [conn100] end connection 127.0.0.1:37516 (3 connections now open)
+2015-02-14T13:44:33.475+0100 [initandlisten] connection accepted from 127.0.0.1:37534 #102 (5 connections now open)
+2015-02-14T13:45:02.496+0100 [conn101] end connection 127.0.0.1:37533 (3 connections now open)
+2015-02-14T13:45:02.496+0100 [initandlisten] connection accepted from 127.0.0.1:37553 #103 (5 connections now open)
+2015-02-14T13:45:03.478+0100 [conn102] end connection 127.0.0.1:37534 (3 connections now open)
+2015-02-14T13:45:03.478+0100 [initandlisten] connection accepted from 127.0.0.1:37554 #104 (4 connections now open)
+2015-02-14T13:45:32.500+0100 [conn103] end connection 127.0.0.1:37553 (3 connections now open)
+2015-02-14T13:45:32.500+0100 [initandlisten] connection accepted from 127.0.0.1:37581 #105 (4 connections now open)
+2015-02-14T13:45:33.482+0100 [conn104] end connection 127.0.0.1:37554 (3 connections now open)
+2015-02-14T13:45:33.482+0100 [initandlisten] connection accepted from 127.0.0.1:37582 #106 (4 connections now open)
+2015-02-14T13:46:02.504+0100 [conn105] end connection 127.0.0.1:37581 (3 connections now open)
+2015-02-14T13:46:02.504+0100 [initandlisten] connection accepted from 127.0.0.1:37634 #107 (5 connections now open)
+2015-02-14T13:46:03.486+0100 [conn106] end connection 127.0.0.1:37582 (3 connections now open)
+2015-02-14T13:46:03.486+0100 [initandlisten] connection accepted from 127.0.0.1:37635 #108 (5 connections now open)
+2015-02-14T13:46:27.020+0100 [clientcursormon] mem (MB) res:32 virt:2628
+2015-02-14T13:46:27.020+0100 [clientcursormon]  mapped (incl journal view):2110
+2015-02-14T13:46:27.020+0100 [clientcursormon]  connections:4
+2015-02-14T13:46:27.020+0100 [clientcursormon]  replication threads:32
+2015-02-14T13:46:32.507+0100 [conn107] end connection 127.0.0.1:37634 (3 connections now open)
+2015-02-14T13:46:32.507+0100 [initandlisten] connection accepted from 127.0.0.1:37655 #109 (4 connections now open)
+2015-02-14T13:46:33.490+0100 [conn108] end connection 127.0.0.1:37635 (3 connections now open)
+2015-02-14T13:46:33.490+0100 [initandlisten] connection accepted from 127.0.0.1:37656 #110 (5 connections now open)
+2015-02-14T13:46:48.016+0100 [conn9] command admin.$cmd command: writebacklisten { writebacklisten: ObjectId('54df3d9ec02eeac1965dbad3') } ntoreturn:1 keyUpdates:0 numYields:0  reslen:44 300000ms
+2015-02-14T13:47:02.511+0100 [conn109] end connection 127.0.0.1:37655 (3 connections now open)
+2015-02-14T13:47:02.511+0100 [initandlisten] connection accepted from 127.0.0.1:37676 #111 (4 connections now open)
+2015-02-14T13:47:03.493+0100 [conn110] end connection 127.0.0.1:37656 (3 connections now open)
+2015-02-14T13:47:03.494+0100 [initandlisten] connection accepted from 127.0.0.1:37677 #112 (4 connections now open)
+2015-02-14T13:47:32.515+0100 [conn111] end connection 127.0.0.1:37676 (3 connections now open)
+2015-02-14T13:47:32.515+0100 [initandlisten] connection accepted from 127.0.0.1:37695 #113 (4 connections now open)
+2015-02-14T13:47:33.497+0100 [conn112] end connection 127.0.0.1:37677 (3 connections now open)
+2015-02-14T13:47:33.497+0100 [initandlisten] connection accepted from 127.0.0.1:37696 #114 (4 connections now open)
+2015-02-14T13:48:02.519+0100 [conn113] end connection 127.0.0.1:37695 (3 connections now open)
+2015-02-14T13:48:02.519+0100 [initandlisten] connection accepted from 127.0.0.1:37718 #115 (5 connections now open)
+2015-02-14T13:48:03.501+0100 [conn114] end connection 127.0.0.1:37696 (3 connections now open)
+2015-02-14T13:48:03.501+0100 [initandlisten] connection accepted from 127.0.0.1:37719 #116 (4 connections now open)
+2015-02-14T13:48:32.522+0100 [conn115] end connection 127.0.0.1:37718 (3 connections now open)
+2015-02-14T13:48:32.523+0100 [initandlisten] connection accepted from 127.0.0.1:37738 #117 (4 connections now open)
+2015-02-14T13:48:33.505+0100 [conn116] end connection 127.0.0.1:37719 (3 connections now open)
+2015-02-14T13:48:33.505+0100 [initandlisten] connection accepted from 127.0.0.1:37739 #118 (4 connections now open)
+2015-02-14T13:49:02.526+0100 [conn117] end connection 127.0.0.1:37738 (3 connections now open)
+2015-02-14T13:49:02.526+0100 [initandlisten] connection accepted from 127.0.0.1:37761 #119 (4 connections now open)
+2015-02-14T13:49:03.509+0100 [conn118] end connection 127.0.0.1:37739 (3 connections now open)
+2015-02-14T13:49:03.509+0100 [initandlisten] connection accepted from 127.0.0.1:37762 #120 (5 connections now open)
+2015-02-14T13:49:32.530+0100 [conn119] end connection 127.0.0.1:37761 (3 connections now open)
+2015-02-14T13:49:32.530+0100 [initandlisten] connection accepted from 127.0.0.1:37782 #121 (4 connections now open)
+2015-02-14T13:49:33.512+0100 [conn120] end connection 127.0.0.1:37762 (3 connections now open)
+2015-02-14T13:49:33.513+0100 [initandlisten] connection accepted from 127.0.0.1:37783 #122 (5 connections now open)
+2015-02-14T13:50:02.533+0100 [conn121] end connection 127.0.0.1:37782 (3 connections now open)
+2015-02-14T13:50:02.533+0100 [initandlisten] connection accepted from 127.0.0.1:37806 #123 (5 connections now open)
+2015-02-14T13:50:03.516+0100 [conn122] end connection 127.0.0.1:37783 (3 connections now open)
+2015-02-14T13:50:03.516+0100 [initandlisten] connection accepted from 127.0.0.1:37807 #124 (4 connections now open)
+2015-02-14T13:50:32.537+0100 [conn123] end connection 127.0.0.1:37806 (3 connections now open)
+2015-02-14T13:50:32.538+0100 [initandlisten] connection accepted from 127.0.0.1:37824 #125 (4 connections now open)
+2015-02-14T13:50:33.519+0100 [conn124] end connection 127.0.0.1:37807 (3 connections now open)
+2015-02-14T13:50:33.520+0100 [initandlisten] connection accepted from 127.0.0.1:37825 #126 (4 connections now open)
+2015-02-14T13:51:02.541+0100 [conn125] end connection 127.0.0.1:37824 (3 connections now open)
+2015-02-14T13:51:02.541+0100 [initandlisten] connection accepted from 127.0.0.1:37850 #127 (4 connections now open)
+2015-02-14T13:51:03.523+0100 [conn126] end connection 127.0.0.1:37825 (3 connections now open)
+2015-02-14T13:51:03.523+0100 [initandlisten] connection accepted from 127.0.0.1:37851 #128 (4 connections now open)
+2015-02-14T13:51:27.027+0100 [clientcursormon] mem (MB) res:32 virt:2628
+2015-02-14T13:51:27.027+0100 [clientcursormon]  mapped (incl journal view):2110
+2015-02-14T13:51:27.027+0100 [clientcursormon]  connections:4
+2015-02-14T13:51:27.027+0100 [clientcursormon]  replication threads:32
+2015-02-14T13:51:32.544+0100 [conn127] end connection 127.0.0.1:37850 (3 connections now open)
+2015-02-14T13:51:32.545+0100 [initandlisten] connection accepted from 127.0.0.1:37897 #129 (5 connections now open)
+2015-02-14T13:51:33.527+0100 [conn128] end connection 127.0.0.1:37851 (3 connections now open)
+2015-02-14T13:51:33.527+0100 [initandlisten] connection accepted from 127.0.0.1:37900 #130 (4 connections now open)
+2015-02-14T13:51:48.016+0100 [conn9] command admin.$cmd command: writebacklisten { writebacklisten: ObjectId('54df3d9ec02eeac1965dbad3') } ntoreturn:1 keyUpdates:0 numYields:0  reslen:44 300000ms
+2015-02-14T13:52:02.548+0100 [conn129] end connection 127.0.0.1:37897 (3 connections now open)
+2015-02-14T13:52:02.548+0100 [initandlisten] connection accepted from 127.0.0.1:37949 #131 (4 connections now open)
+2015-02-14T13:52:03.530+0100 [conn130] end connection 127.0.0.1:37900 (3 connections now open)
+2015-02-14T13:52:03.530+0100 [initandlisten] connection accepted from 127.0.0.1:37950 #132 (4 connections now open)
+2015-02-14T13:52:32.552+0100 [conn131] end connection 127.0.0.1:37949 (3 connections now open)
+2015-02-14T13:52:32.552+0100 [initandlisten] connection accepted from 127.0.0.1:38001 #133 (5 connections now open)
+2015-02-14T13:52:33.534+0100 [conn132] end connection 127.0.0.1:37950 (3 connections now open)
+2015-02-14T13:52:33.534+0100 [initandlisten] connection accepted from 127.0.0.1:38002 #134 (4 connections now open)
+2015-02-14T13:53:02.555+0100 [conn133] end connection 127.0.0.1:38001 (3 connections now open)
+2015-02-14T13:53:02.555+0100 [initandlisten] connection accepted from 127.0.0.1:38020 #135 (4 connections now open)
+2015-02-14T13:53:03.537+0100 [conn134] end connection 127.0.0.1:38002 (3 connections now open)
+2015-02-14T13:53:03.537+0100 [initandlisten] connection accepted from 127.0.0.1:38021 #136 (5 connections now open)
+2015-02-14T13:53:32.559+0100 [conn135] end connection 127.0.0.1:38020 (3 connections now open)
+2015-02-14T13:53:32.559+0100 [initandlisten] connection accepted from 127.0.0.1:38041 #137 (5 connections now open)
+2015-02-14T13:53:33.541+0100 [conn136] end connection 127.0.0.1:38021 (3 connections now open)
+2015-02-14T13:53:33.541+0100 [initandlisten] connection accepted from 127.0.0.1:38042 #138 (5 connections now open)
+2015-02-14T13:54:02.563+0100 [conn137] end connection 127.0.0.1:38041 (3 connections now open)
+2015-02-14T13:54:02.563+0100 [initandlisten] connection accepted from 127.0.0.1:38064 #139 (5 connections now open)
+2015-02-14T13:54:03.545+0100 [conn138] end connection 127.0.0.1:38042 (3 connections now open)
+2015-02-14T13:54:03.545+0100 [initandlisten] connection accepted from 127.0.0.1:38065 #140 (5 connections now open)
+2015-02-14T13:54:32.566+0100 [conn139] end connection 127.0.0.1:38064 (3 connections now open)
+2015-02-14T13:54:32.566+0100 [initandlisten] connection accepted from 127.0.0.1:38084 #141 (4 connections now open)
+2015-02-14T13:54:33.549+0100 [conn140] end connection 127.0.0.1:38065 (3 connections now open)
+2015-02-14T13:54:33.549+0100 [initandlisten] connection accepted from 127.0.0.1:38085 #142 (5 connections now open)
+2015-02-14T13:55:02.570+0100 [conn141] end connection 127.0.0.1:38084 (3 connections now open)
+2015-02-14T13:55:02.570+0100 [initandlisten] connection accepted from 127.0.0.1:38104 #143 (4 connections now open)
+2015-02-14T13:55:03.553+0100 [conn142] end connection 127.0.0.1:38085 (3 connections now open)
+2015-02-14T13:55:03.553+0100 [initandlisten] connection accepted from 127.0.0.1:38105 #144 (4 connections now open)
+2015-02-14T13:55:32.573+0100 [conn143] end connection 127.0.0.1:38104 (3 connections now open)
+2015-02-14T13:55:32.574+0100 [initandlisten] connection accepted from 127.0.0.1:38125 #145 (4 connections now open)
+2015-02-14T13:55:33.556+0100 [conn144] end connection 127.0.0.1:38105 (3 connections now open)
+2015-02-14T13:55:33.557+0100 [initandlisten] connection accepted from 127.0.0.1:38126 #146 (4 connections now open)
+2015-02-14T13:56:02.577+0100 [conn145] end connection 127.0.0.1:38125 (3 connections now open)
+2015-02-14T13:56:02.577+0100 [initandlisten] connection accepted from 127.0.0.1:38143 #147 (5 connections now open)
+2015-02-14T13:56:03.560+0100 [conn146] end connection 127.0.0.1:38126 (3 connections now open)
+2015-02-14T13:56:03.560+0100 [initandlisten] connection accepted from 127.0.0.1:38144 #148 (5 connections now open)
+2015-02-14T13:56:27.034+0100 [clientcursormon] mem (MB) res:32 virt:2628
+2015-02-14T13:56:27.034+0100 [clientcursormon]  mapped (incl journal view):2110
+2015-02-14T13:56:27.034+0100 [clientcursormon]  connections:4
+2015-02-14T13:56:27.034+0100 [clientcursormon]  replication threads:32
+2015-02-14T13:56:32.581+0100 [conn147] end connection 127.0.0.1:38143 (3 connections now open)
+2015-02-14T13:56:32.581+0100 [initandlisten] connection accepted from 127.0.0.1:38163 #149 (5 connections now open)
+2015-02-14T13:56:33.564+0100 [conn148] end connection 127.0.0.1:38144 (3 connections now open)
+2015-02-14T13:56:33.564+0100 [initandlisten] connection accepted from 127.0.0.1:38164 #150 (4 connections now open)
+2015-02-14T13:56:48.016+0100 [conn9] command admin.$cmd command: writebacklisten { writebacklisten: ObjectId('54df3d9ec02eeac1965dbad3') } ntoreturn:1 keyUpdates:0 numYields:0  reslen:44 300000ms
+2015-02-14T13:57:02.585+0100 [conn149] end connection 127.0.0.1:38163 (3 connections now open)
+2015-02-14T13:57:02.585+0100 [initandlisten] connection accepted from 127.0.0.1:38181 #151 (4 connections now open)
+2015-02-14T13:57:03.568+0100 [conn150] end connection 127.0.0.1:38164 (3 connections now open)
+2015-02-14T13:57:03.568+0100 [initandlisten] connection accepted from 127.0.0.1:38182 #152 (5 connections now open)
+2015-02-14T13:57:32.589+0100 [conn151] end connection 127.0.0.1:38181 (3 connections now open)
+2015-02-14T13:57:32.589+0100 [initandlisten] connection accepted from 127.0.0.1:38212 #153 (4 connections now open)
+2015-02-14T13:57:33.572+0100 [conn152] end connection 127.0.0.1:38182 (3 connections now open)
+2015-02-14T13:57:33.572+0100 [initandlisten] connection accepted from 127.0.0.1:38213 #154 (4 connections now open)
+2015-02-14T13:58:02.592+0100 [conn153] end connection 127.0.0.1:38212 (3 connections now open)
+2015-02-14T13:58:02.592+0100 [initandlisten] connection accepted from 127.0.0.1:38233 #155 (4 connections now open)
+2015-02-14T13:58:03.575+0100 [conn154] end connection 127.0.0.1:38213 (3 connections now open)
+2015-02-14T13:58:03.575+0100 [initandlisten] connection accepted from 127.0.0.1:38234 #156 (4 connections now open)
+2015-02-14T13:58:32.596+0100 [conn155] end connection 127.0.0.1:38233 (3 connections now open)
+2015-02-14T13:58:32.596+0100 [initandlisten] connection accepted from 127.0.0.1:38253 #157 (5 connections now open)
+2015-02-14T13:58:33.579+0100 [conn156] end connection 127.0.0.1:38234 (3 connections now open)
+2015-02-14T13:58:33.579+0100 [initandlisten] connection accepted from 127.0.0.1:38254 #158 (4 connections now open)
+2015-02-14T13:59:02.599+0100 [conn157] end connection 127.0.0.1:38253 (3 connections now open)
+2015-02-14T13:59:02.599+0100 [initandlisten] connection accepted from 127.0.0.1:38291 #159 (5 connections now open)
+2015-02-14T13:59:03.583+0100 [conn158] end connection 127.0.0.1:38254 (3 connections now open)
+2015-02-14T13:59:03.583+0100 [initandlisten] connection accepted from 127.0.0.1:38297 #160 (4 connections now open)
+2015-02-14T13:59:32.603+0100 [conn159] end connection 127.0.0.1:38291 (3 connections now open)
+2015-02-14T13:59:32.603+0100 [initandlisten] connection accepted from 127.0.0.1:38359 #161 (5 connections now open)
+2015-02-14T13:59:33.586+0100 [conn160] end connection 127.0.0.1:38297 (3 connections now open)
+2015-02-14T13:59:33.586+0100 [initandlisten] connection accepted from 127.0.0.1:38360 #162 (4 connections now open)
+2015-02-14T14:00:02.607+0100 [conn161] end connection 127.0.0.1:38359 (3 connections now open)
+2015-02-14T14:00:02.607+0100 [initandlisten] connection accepted from 127.0.0.1:38383 #163 (4 connections now open)
+2015-02-14T14:00:03.589+0100 [conn162] end connection 127.0.0.1:38360 (3 connections now open)
+2015-02-14T14:00:03.589+0100 [initandlisten] connection accepted from 127.0.0.1:38384 #164 (4 connections now open)
+2015-02-14T14:00:32.611+0100 [conn163] end connection 127.0.0.1:38383 (3 connections now open)
+2015-02-14T14:00:32.611+0100 [initandlisten] connection accepted from 127.0.0.1:38430 #165 (4 connections now open)
+2015-02-14T14:00:33.593+0100 [conn164] end connection 127.0.0.1:38384 (3 connections now open)
+2015-02-14T14:00:33.593+0100 [initandlisten] connection accepted from 127.0.0.1:38431 #166 (4 connections now open)
+2015-02-14T14:01:02.615+0100 [conn165] end connection 127.0.0.1:38430 (3 connections now open)
+2015-02-14T14:01:02.615+0100 [initandlisten] connection accepted from 127.0.0.1:38456 #167 (5 connections now open)
+2015-02-14T14:01:03.597+0100 [conn166] end connection 127.0.0.1:38431 (3 connections now open)
+2015-02-14T14:01:03.597+0100 [initandlisten] connection accepted from 127.0.0.1:38458 #168 (4 connections now open)
+2015-02-14T14:01:27.041+0100 [clientcursormon] mem (MB) res:31 virt:2628
+2015-02-14T14:01:27.041+0100 [clientcursormon]  mapped (incl journal view):2110
+2015-02-14T14:01:27.041+0100 [clientcursormon]  connections:4
+2015-02-14T14:01:27.041+0100 [clientcursormon]  replication threads:32
+2015-02-14T14:01:32.619+0100 [conn167] end connection 127.0.0.1:38456 (3 connections now open)
+2015-02-14T14:01:32.619+0100 [initandlisten] connection accepted from 127.0.0.1:38481 #169 (4 connections now open)
+2015-02-14T14:01:33.601+0100 [conn168] end connection 127.0.0.1:38458 (3 connections now open)
+2015-02-14T14:01:33.601+0100 [initandlisten] connection accepted from 127.0.0.1:38482 #170 (4 connections now open)
+2015-02-14T14:01:48.017+0100 [conn9] command admin.$cmd command: writebacklisten { writebacklisten: ObjectId('54df3d9ec02eeac1965dbad3') } ntoreturn:1 keyUpdates:0 numYields:0  reslen:44 300000ms
+2015-02-14T14:02:02.622+0100 [conn169] end connection 127.0.0.1:38481 (3 connections now open)
+2015-02-14T14:02:02.622+0100 [initandlisten] connection accepted from 127.0.0.1:38501 #171 (5 connections now open)
+2015-02-14T14:02:03.605+0100 [conn170] end connection 127.0.0.1:38482 (3 connections now open)
+2015-02-14T14:02:03.605+0100 [initandlisten] connection accepted from 127.0.0.1:38502 #172 (4 connections now open)
+2015-02-14T14:02:12.041+0100 [conn10] end connection 127.0.0.1:36496 (3 connections now open)
+2015-02-14T14:02:32.626+0100 [conn171] end connection 127.0.0.1:38501 (2 connections now open)
+2015-02-14T14:02:32.626+0100 [initandlisten] connection accepted from 127.0.0.1:38521 #173 (3 connections now open)
+2015-02-14T14:02:33.608+0100 [conn172] end connection 127.0.0.1:38502 (2 connections now open)
+2015-02-14T14:02:33.608+0100 [initandlisten] connection accepted from 127.0.0.1:38522 #174 (3 connections now open)
+2015-02-14T14:03:02.630+0100 [conn173] end connection 127.0.0.1:38521 (2 connections now open)
+2015-02-14T14:03:02.630+0100 [initandlisten] connection accepted from 127.0.0.1:38542 #175 (4 connections now open)
+2015-02-14T14:03:03.612+0100 [conn174] end connection 127.0.0.1:38522 (2 connections now open)
+2015-02-14T14:03:03.612+0100 [initandlisten] connection accepted from 127.0.0.1:38543 #176 (3 connections now open)
+2015-02-14T14:03:08.011+0100 [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2015-02-14T14:03:08.012+0100 [signalProcessingThread] now exiting
+2015-02-14T14:03:08.012+0100 [signalProcessingThread] dbexit: 
+2015-02-14T14:03:08.013+0100 [signalProcessingThread] shutdown: going to close listening sockets...
+2015-02-14T14:03:08.013+0100 [signalProcessingThread] closing listening socket: 8
+2015-02-14T14:03:08.013+0100 [signalProcessingThread] closing listening socket: 10
+2015-02-14T14:03:08.013+0100 [signalProcessingThread] removing socket file: /tmp/mongodb-57019.sock
+2015-02-14T14:03:08.013+0100 [signalProcessingThread] shutdown: going to flush diaglog...
+2015-02-14T14:03:08.013+0100 [signalProcessingThread] shutdown: going to close sockets...
+2015-02-14T14:03:08.013+0100 [signalProcessingThread] shutdown: waiting for fs preallocator...
+2015-02-14T14:03:08.013+0100 [signalProcessingThread] shutdown: lock for final commit...
+2015-02-14T14:03:08.013+0100 [signalProcessingThread] shutdown: final commit...
+2015-02-14T14:03:08.014+0100 [conn175] end connection 127.0.0.1:38542 (2 connections now open)
+2015-02-14T14:03:08.015+0100 [signalProcessingThread] shutdown: closing all files...
+2015-02-14T14:03:08.018+0100 [conn176] end connection 127.0.0.1:38543 (1 connection now open)
+2015-02-14T14:03:08.021+0100 [signalProcessingThread] closeAllFiles() finished
+2015-02-14T14:03:08.021+0100 [signalProcessingThread] journalCleanup...
+2015-02-14T14:03:08.021+0100 [signalProcessingThread] removeJournalFiles
+2015-02-14T14:03:08.037+0100 [rsBackgroundSync] replSet sync source problem: 10278 dbclient error communicating with server: localhost:57017
+2015-02-14T14:03:08.062+0100 [signalProcessingThread] shutdown: removing fs lock...
+2015-02-14T14:03:08.062+0100 [signalProcessingThread] dbexit: really exiting now

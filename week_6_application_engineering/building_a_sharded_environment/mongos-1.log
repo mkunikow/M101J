@@ -1,0 +1,948 @@
+2015-02-14T13:20:45.566+0100 [mongosMain] MongoS version 2.6.7 starting: pid=25705 port=27017 64-bit host=ubuntu-pc (--help for usage)
+2015-02-14T13:20:45.566+0100 [mongosMain] db version v2.6.7
+2015-02-14T13:20:45.566+0100 [mongosMain] git version: a7d57ad27c382de82e9cb93bf983a80fd9ac9899
+2015-02-14T13:20:45.566+0100 [mongosMain] build info: Linux build7.nj1.10gen.cc 2.6.32-431.3.1.el6.x86_64 #1 SMP Fri Jan 3 21:39:27 UTC 2014 x86_64 BOOST_LIB_VERSION=1_49
+2015-02-14T13:20:45.566+0100 [mongosMain] allocator: tcmalloc
+2015-02-14T13:20:45.566+0100 [mongosMain] options: { processManagement: { fork: true }, sharding: { configDB: "localhost:57040,localhost:57041,localhost:57042" }, systemLog: { destination: "file", path: "mongos-1.log" } }
+2015-02-14T13:20:45.568+0100 [mongosMain] SyncClusterConnection connecting to [localhost:57040]
+2015-02-14T13:20:45.568+0100 [mongosMain] SyncClusterConnection connecting to [localhost:57041]
+2015-02-14T13:20:45.568+0100 [mongosMain] SyncClusterConnection connecting to [localhost:57042]
+2015-02-14T13:20:45.614+0100 [mongosMain] scoped connection to localhost:57040,localhost:57041,localhost:57042 not being returned to the pool
+2015-02-14T13:20:45.617+0100 [mongosMain] SyncClusterConnection connecting to [localhost:57040]
+2015-02-14T13:20:45.617+0100 [LockPinger] creating distributed lock ping thread for localhost:57040,localhost:57041,localhost:57042 and process ubuntu-pc:27017:1423916445:1804289383 (sleeping for 30000ms)
+2015-02-14T13:20:45.618+0100 [LockPinger] SyncClusterConnection connecting to [localhost:57040]
+2015-02-14T13:20:45.618+0100 [mongosMain] SyncClusterConnection connecting to [localhost:57041]
+2015-02-14T13:20:45.618+0100 [LockPinger] SyncClusterConnection connecting to [localhost:57041]
+2015-02-14T13:20:45.618+0100 [mongosMain] SyncClusterConnection connecting to [localhost:57042]
+2015-02-14T13:20:45.618+0100 [LockPinger] SyncClusterConnection connecting to [localhost:57042]
+2015-02-14T13:20:46.087+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:20:45 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:20:46.161+0100 [mongosMain] distributed lock 'configUpgrade/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3d9ec02eeac1965dbacf
+2015-02-14T13:20:46.162+0100 [mongosMain] starting upgrade of config server from v0 to v5
+2015-02-14T13:20:46.162+0100 [mongosMain] starting next upgrade step from v0 to v5
+2015-02-14T13:20:46.162+0100 [mongosMain] about to log new metadata event: { _id: "ubuntu-pc-2015-02-14T12:20:46-54df3d9ec02eeac1965dbad0", server: "ubuntu-pc", clientAddr: "N/A", time: new Date(1423916446162), what: "starting upgrade of config database", ns: "config.version", details: { from: 0, to: 5 } }
+2015-02-14T13:20:46.233+0100 [mongosMain] creating WriteBackListener for: localhost:57040 serverID: 000000000000000000000000
+2015-02-14T13:20:46.235+0100 [mongosMain] creating WriteBackListener for: localhost:57041 serverID: 000000000000000000000000
+2015-02-14T13:20:46.236+0100 [mongosMain] creating WriteBackListener for: localhost:57042 serverID: 000000000000000000000000
+2015-02-14T13:20:46.289+0100 [mongosMain] writing initial config version at v5
+2015-02-14T13:20:46.359+0100 [mongosMain] about to log new metadata event: { _id: "ubuntu-pc-2015-02-14T12:20:46-54df3d9ec02eeac1965dbad2", server: "ubuntu-pc", clientAddr: "N/A", time: new Date(1423916446359), what: "finished upgrade of config database", ns: "config.version", details: { from: 0, to: 5 } }
+2015-02-14T13:20:46.417+0100 [mongosMain] upgrade of config server to v5 successful
+2015-02-14T13:20:46.483+0100 [mongosMain] distributed lock 'configUpgrade/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:20:46.940+0100 [mongosMain] scoped connection to localhost:57040,localhost:57041,localhost:57042 not being returned to the pool
+2015-02-14T13:20:46.940+0100 [Balancer] about to contact config servers and shards
+2015-02-14T13:20:46.940+0100 [Balancer] SyncClusterConnection connecting to [localhost:57040]
+2015-02-14T13:20:46.940+0100 [mongosMain] waiting for connections on port 27017
+2015-02-14T13:20:46.940+0100 [Balancer] SyncClusterConnection connecting to [localhost:57041]
+2015-02-14T13:20:46.940+0100 [Balancer] SyncClusterConnection connecting to [localhost:57042]
+2015-02-14T13:20:46.941+0100 [Balancer] config servers and shards contacted successfully
+2015-02-14T13:20:46.941+0100 [Balancer] balancer id: ubuntu-pc:27017 started at Feb 14 13:20:46
+2015-02-14T13:20:46.942+0100 [Balancer] SyncClusterConnection connecting to [localhost:57040]
+2015-02-14T13:20:46.942+0100 [Balancer] SyncClusterConnection connecting to [localhost:57041]
+2015-02-14T13:20:46.942+0100 [Balancer] SyncClusterConnection connecting to [localhost:57042]
+2015-02-14T13:20:47.399+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3d9fc02eeac1965dbad4
+2015-02-14T13:20:47.546+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:20:53.701+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3da5c02eeac1965dbad5
+2015-02-14T13:20:53.773+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:21:00.029+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3dabc02eeac1965dbad6
+2015-02-14T13:21:00.169+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:21:06.424+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3db2c02eeac1965dbad7
+2015-02-14T13:21:06.496+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:21:12.762+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3db8c02eeac1965dbad8
+2015-02-14T13:21:12.902+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:21:16.351+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:21:16 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:21:19.064+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3dbec02eeac1965dbad9
+2015-02-14T13:21:19.136+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:21:25.423+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3dc5c02eeac1965dbada
+2015-02-14T13:21:25.571+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:21:31.941+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3dcbc02eeac1965dbadb
+2015-02-14T13:21:32.086+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:21:38.340+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3dd2c02eeac1965dbadc
+2015-02-14T13:21:38.412+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:21:44.650+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3dd8c02eeac1965dbadd
+2015-02-14T13:21:44.756+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:21:46.501+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:21:46 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:21:47.011+0100 [mongosMain] connection accepted from 127.0.0.1:56482 #1 (1 connection now open)
+2015-02-14T13:21:47.012+0100 [conn1] couldn't find database [admin] in config db
+2015-02-14T13:21:47.027+0100 [conn1] 	 put [admin] on: config:localhost:57040,localhost:57041,localhost:57042
+2015-02-14T13:21:47.029+0100 [conn1] starting new replica set monitor for replica set s0 with seeds localhost:37017
+2015-02-14T13:21:47.029+0100 [ReplicaSetMonitorWatcher] starting
+2015-02-14T13:21:47.030+0100 [conn1] changing hosts to s0/localhost:37017,localhost:37018,localhost:37019 from s0/localhost:37017
+2015-02-14T13:21:47.031+0100 [conn1] going to add shard: { _id: "s0", host: "s0/localhost:37017,localhost:37018,localhost:37019" }
+2015-02-14T13:21:47.089+0100 [conn1] about to log metadata event: { _id: "ubuntu-pc-2015-02-14T12:21:47-54df3ddbc02eeac1965dbade", server: "ubuntu-pc", clientAddr: "N/A", time: new Date(1423916507089), what: "addShard", ns: "", details: { name: "s0", host: "s0/localhost:37017" } }
+2015-02-14T13:21:47.194+0100 [conn1] starting new replica set monitor for replica set s1 with seeds localhost:47017
+2015-02-14T13:21:47.194+0100 [conn1] changing hosts to s1/localhost:47017,localhost:47018,localhost:47019 from s1/localhost:47017
+2015-02-14T13:21:47.195+0100 [conn1] going to add shard: { _id: "s1", host: "s1/localhost:47017,localhost:47018,localhost:47019" }
+2015-02-14T13:21:47.238+0100 [conn1] about to log metadata event: { _id: "ubuntu-pc-2015-02-14T12:21:47-54df3ddbc02eeac1965dbadf", server: "ubuntu-pc", clientAddr: "N/A", time: new Date(1423916507238), what: "addShard", ns: "", details: { name: "s1", host: "s1/localhost:47017" } }
+2015-02-14T13:21:47.294+0100 [conn1] starting new replica set monitor for replica set s2 with seeds localhost:57017
+2015-02-14T13:21:47.295+0100 [conn1] changing hosts to s2/localhost:57017,localhost:57018,localhost:57019 from s2/localhost:57017
+2015-02-14T13:21:47.296+0100 [conn1] going to add shard: { _id: "s2", host: "s2/localhost:57017,localhost:57018,localhost:57019" }
+2015-02-14T13:21:47.340+0100 [conn1] about to log metadata event: { _id: "ubuntu-pc-2015-02-14T12:21:47-54df3ddbc02eeac1965dbae0", server: "ubuntu-pc", clientAddr: "N/A", time: new Date(1423916507340), what: "addShard", ns: "", details: { name: "s2", host: "s2/localhost:57017" } }
+2015-02-14T13:21:47.387+0100 [conn1] couldn't find database [test] in config db
+2015-02-14T13:21:47.438+0100 [conn1] 	 put [test] on: s0:s0/localhost:37017,localhost:37018,localhost:37019
+2015-02-14T13:21:47.438+0100 [conn1] enabling sharding on: test
+2015-02-14T13:21:47.484+0100 [conn1] creating WriteBackListener for: localhost:37017 serverID: 54df3d9ec02eeac1965dbad3
+2015-02-14T13:21:47.578+0100 [conn1] CMD: shardcollection: { shardCollection: "test.grades", key: { student_id: 1.0 } }
+2015-02-14T13:21:47.578+0100 [conn1] enable sharding on: test.grades with shard key: { student_id: 1.0 }
+2015-02-14T13:21:47.578+0100 [conn1] about to log metadata event: { _id: "ubuntu-pc-2015-02-14T12:21:47-54df3ddbc02eeac1965dbae1", server: "ubuntu-pc", clientAddr: "N/A", time: new Date(1423916507578), what: "shardCollection.start", ns: "test.grades", details: { shardKey: { student_id: 1.0 }, collection: "test.grades", primary: "s0:s0/localhost:37017,localhost:37018,localhost:37019", initShards: [], numChunks: 1 } }
+2015-02-14T13:21:47.759+0100 [conn1] going to create 1 chunk(s) for: test.grades using new epoch 54df3ddbc02eeac1965dbae2
+2015-02-14T13:21:47.872+0100 [conn1] ChunkManager: time to load chunks for test.grades: 1ms sequenceNumber: 2 version: 1|0||54df3ddbc02eeac1965dbae2 based on: (empty)
+2015-02-14T13:21:47.981+0100 [conn1] creating WriteBackListener for: localhost:37018 serverID: 54df3d9ec02eeac1965dbad3
+2015-02-14T13:21:47.981+0100 [conn1] creating WriteBackListener for: localhost:37019 serverID: 54df3d9ec02eeac1965dbad3
+2015-02-14T13:21:48.014+0100 [conn1] creating WriteBackListener for: localhost:47017 serverID: 54df3d9ec02eeac1965dbad3
+2015-02-14T13:21:48.014+0100 [conn1] creating WriteBackListener for: localhost:47018 serverID: 54df3d9ec02eeac1965dbad3
+2015-02-14T13:21:48.014+0100 [conn1] creating WriteBackListener for: localhost:47019 serverID: 54df3d9ec02eeac1965dbad3
+2015-02-14T13:21:48.015+0100 [conn1] resetting shard version of test.grades on localhost:47017, version is zero
+2015-02-14T13:21:48.015+0100 [conn1] creating WriteBackListener for: localhost:57017 serverID: 54df3d9ec02eeac1965dbad3
+2015-02-14T13:21:48.015+0100 [conn1] creating WriteBackListener for: localhost:57018 serverID: 54df3d9ec02eeac1965dbad3
+2015-02-14T13:21:48.015+0100 [conn1] creating WriteBackListener for: localhost:57019 serverID: 54df3d9ec02eeac1965dbad3
+2015-02-14T13:21:48.015+0100 [conn1] resetting shard version of test.grades on localhost:57017, version is zero
+2015-02-14T13:21:48.015+0100 [conn1] about to log metadata event: { _id: "ubuntu-pc-2015-02-14T12:21:48-54df3ddcc02eeac1965dbae3", server: "ubuntu-pc", clientAddr: "N/A", time: new Date(1423916508015), what: "shardCollection", ns: "test.grades", details: { version: "1|0||54df3ddbc02eeac1965dbae2" } }
+2015-02-14T13:21:48.101+0100 [conn1] end connection 127.0.0.1:56482 (0 connections now open)
+2015-02-14T13:21:50.936+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ddec02eeac1965dbae4
+2015-02-14T13:21:51.126+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:21:57.412+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3de5c02eeac1965dbae5
+2015-02-14T13:21:57.590+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:22:03.742+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3debc02eeac1965dbae6
+2015-02-14T13:22:03.851+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:22:10.106+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3df1c02eeac1965dbae7
+2015-02-14T13:22:10.247+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:22:16.399+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3df8c02eeac1965dbae8
+2015-02-14T13:22:16.505+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:22:16.649+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:22:16 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:22:22.660+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3dfec02eeac1965dbae9
+2015-02-14T13:22:22.766+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:22:29.060+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e04c02eeac1965dbaea
+2015-02-14T13:22:29.201+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:22:35.360+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e0bc02eeac1965dbaeb
+2015-02-14T13:22:35.503+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:22:41.825+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e11c02eeac1965dbaec
+2015-02-14T13:22:41.967+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:22:46.850+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:22:46 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:22:48.232+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e17c02eeac1965dbaed
+2015-02-14T13:22:48.406+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:22:54.706+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e1ec02eeac1965dbaee
+2015-02-14T13:22:54.853+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:23:01.235+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e24c02eeac1965dbaef
+2015-02-14T13:23:01.377+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:23:07.530+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e2bc02eeac1965dbaf0
+2015-02-14T13:23:07.637+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:23:13.891+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e31c02eeac1965dbaf1
+2015-02-14T13:23:14.065+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:23:17.104+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:23:16 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:23:20.220+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e38c02eeac1965dbaf2
+2015-02-14T13:23:20.326+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:23:26.478+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e3ec02eeac1965dbaf3
+2015-02-14T13:23:26.627+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:23:32.923+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e44c02eeac1965dbaf4
+2015-02-14T13:23:33.063+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:23:39.469+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e4bc02eeac1965dbaf5
+2015-02-14T13:23:39.583+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:23:45.866+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e51c02eeac1965dbaf6
+2015-02-14T13:23:46.040+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:23:47.377+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:23:47 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:23:52.377+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e58c02eeac1965dbaf7
+2015-02-14T13:23:52.490+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:23:58.741+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e5ec02eeac1965dbaf8
+2015-02-14T13:23:58.847+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:24:05.108+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e64c02eeac1965dbaf9
+2015-02-14T13:24:05.248+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:24:11.407+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e6bc02eeac1965dbafa
+2015-02-14T13:24:11.512+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:24:17.513+0100 [Balancer] SyncClusterConnection connecting to [localhost:57040]
+2015-02-14T13:24:17.513+0100 [Balancer] SyncClusterConnection connecting to [localhost:57041]
+2015-02-14T13:24:17.513+0100 [Balancer] SyncClusterConnection connecting to [localhost:57042]
+2015-02-14T13:24:17.633+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:24:17 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:24:17.705+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e71c02eeac1965dbafb
+2015-02-14T13:24:17.816+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:24:24.214+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e77c02eeac1965dbafc
+2015-02-14T13:24:24.361+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:24:30.659+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e7ec02eeac1965dbafd
+2015-02-14T13:24:30.833+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:24:37.068+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e84c02eeac1965dbafe
+2015-02-14T13:24:37.174+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:24:43.374+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e8bc02eeac1965dbaff
+2015-02-14T13:24:43.480+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:24:47.780+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:24:47 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:24:49.745+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e91c02eeac1965dbb00
+2015-02-14T13:24:49.885+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:24:56.105+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e97c02eeac1965dbb01
+2015-02-14T13:24:56.211+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:25:02.370+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3e9ec02eeac1965dbb02
+2015-02-14T13:25:02.517+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:25:08.670+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ea4c02eeac1965dbb03
+2015-02-14T13:25:08.784+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:25:15.076+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3eaac02eeac1965dbb04
+2015-02-14T13:25:15.182+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:25:17.922+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:25:17 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:25:21.422+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3eb1c02eeac1965dbb05
+2015-02-14T13:25:21.562+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:25:27.749+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3eb7c02eeac1965dbb06
+2015-02-14T13:25:27.861+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:25:34.153+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ebdc02eeac1965dbb07
+2015-02-14T13:25:34.293+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:25:40.587+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ec4c02eeac1965dbb08
+2015-02-14T13:25:40.727+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:25:47.022+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ecac02eeac1965dbb09
+2015-02-14T13:25:47.195+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:25:48.157+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:25:47 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:25:53.458+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ed1c02eeac1965dbb0a
+2015-02-14T13:25:53.598+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:25:59.896+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ed7c02eeac1965dbb0b
+2015-02-14T13:26:00.002+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:26:06.365+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3edec02eeac1965dbb0c
+2015-02-14T13:26:06.539+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:26:12.690+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ee4c02eeac1965dbb0d
+2015-02-14T13:26:12.833+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:26:18.434+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:26:18 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:26:18.996+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3eeac02eeac1965dbb0e
+2015-02-14T13:26:19.102+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:26:25.310+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ef1c02eeac1965dbb0f
+2015-02-14T13:26:25.416+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:26:31.683+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ef7c02eeac1965dbb10
+2015-02-14T13:26:31.823+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:26:37.970+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3efdc02eeac1965dbb11
+2015-02-14T13:26:38.076+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:26:44.369+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f04c02eeac1965dbb12
+2015-02-14T13:26:44.475+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:26:48.571+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:26:48 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:26:50.707+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f0ac02eeac1965dbb13
+2015-02-14T13:26:50.855+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:26:57.007+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f10c02eeac1965dbb14
+2015-02-14T13:26:57.113+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:27:03.311+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f17c02eeac1965dbb15
+2015-02-14T13:27:03.383+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:27:09.531+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f1dc02eeac1965dbb16
+2015-02-14T13:27:09.640+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:27:15.875+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f23c02eeac1965dbb17
+2015-02-14T13:27:15.981+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:27:18.713+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:27:18 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:27:22.244+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f29c02eeac1965dbb18
+2015-02-14T13:27:22.384+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:27:28.667+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f30c02eeac1965dbb19
+2015-02-14T13:27:28.739+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:27:35.000+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f36c02eeac1965dbb1a
+2015-02-14T13:27:35.140+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:27:41.307+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f3dc02eeac1965dbb1b
+2015-02-14T13:27:41.415+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:27:47.768+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f43c02eeac1965dbb1c
+2015-02-14T13:27:47.908+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:27:48.904+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:27:48 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:27:54.064+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f49c02eeac1965dbb1d
+2015-02-14T13:27:54.170+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:28:00.396+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f50c02eeac1965dbb1e
+2015-02-14T13:28:00.536+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:28:06.732+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f56c02eeac1965dbb1f
+2015-02-14T13:28:06.847+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:28:13.134+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f5cc02eeac1965dbb20
+2015-02-14T13:28:13.207+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:28:19.044+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:28:18 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:28:19.448+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f63c02eeac1965dbb21
+2015-02-14T13:28:19.588+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:28:25.739+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f69c02eeac1965dbb22
+2015-02-14T13:28:25.811+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:28:31.962+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f6fc02eeac1965dbb23
+2015-02-14T13:28:32.103+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:28:38.258+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f76c02eeac1965dbb24
+2015-02-14T13:28:38.365+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:28:44.600+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f7cc02eeac1965dbb25
+2015-02-14T13:28:44.708+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:28:49.246+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:28:49 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:28:50.971+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f82c02eeac1965dbb26
+2015-02-14T13:28:51.112+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:28:57.405+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f89c02eeac1965dbb27
+2015-02-14T13:28:57.545+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:29:03.814+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f8fc02eeac1965dbb28
+2015-02-14T13:29:03.954+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:29:10.156+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f95c02eeac1965dbb29
+2015-02-14T13:29:10.296+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:29:16.582+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3f9cc02eeac1965dbb2a
+2015-02-14T13:29:16.768+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:29:19.413+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:29:19 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:29:22.983+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fa2c02eeac1965dbb2b
+2015-02-14T13:29:23.096+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:29:29.350+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fa9c02eeac1965dbb2c
+2015-02-14T13:29:29.460+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:29:35.715+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fafc02eeac1965dbb2d
+2015-02-14T13:29:35.889+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:29:42.177+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fb5c02eeac1965dbb2e
+2015-02-14T13:29:42.317+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:29:48.533+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fbcc02eeac1965dbb2f
+2015-02-14T13:29:48.639+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:29:49.639+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:29:49 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:29:54.870+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fc2c02eeac1965dbb30
+2015-02-14T13:29:55.010+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:30:01.273+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fc9c02eeac1965dbb31
+2015-02-14T13:30:01.382+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:30:07.531+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fcfc02eeac1965dbb32
+2015-02-14T13:30:07.705+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:30:14.000+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fd5c02eeac1965dbb33
+2015-02-14T13:30:14.111+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:30:19.918+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:30:19 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:30:20.352+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fdcc02eeac1965dbb34
+2015-02-14T13:30:20.459+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:30:26.713+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fe2c02eeac1965dbb35
+2015-02-14T13:30:26.854+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:30:33.013+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fe8c02eeac1965dbb36
+2015-02-14T13:30:33.119+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:30:39.349+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3fefc02eeac1965dbb37
+2015-02-14T13:30:39.466+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:30:45.695+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ff5c02eeac1965dbb38
+2015-02-14T13:30:45.772+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:30:50.150+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:30:49 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:30:51.941+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df3ffbc02eeac1965dbb39
+2015-02-14T13:30:52.081+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:30:58.309+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4002c02eeac1965dbb3a
+2015-02-14T13:30:58.415+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:31:04.677+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4008c02eeac1965dbb3b
+2015-02-14T13:31:04.783+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:31:10.939+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df400ec02eeac1965dbb3c
+2015-02-14T13:31:11.046+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:31:17.342+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4015c02eeac1965dbb3d
+2015-02-14T13:31:17.414+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:31:20.293+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:31:20 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:31:23.576+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df401bc02eeac1965dbb3e
+2015-02-14T13:31:23.716+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:31:30.016+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4021c02eeac1965dbb3f
+2015-02-14T13:31:30.122+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:31:36.337+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4028c02eeac1965dbb40
+2015-02-14T13:31:36.477+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:31:42.746+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df402ec02eeac1965dbb41
+2015-02-14T13:31:42.852+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:31:49.137+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4034c02eeac1965dbb42
+2015-02-14T13:31:49.277+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:31:50.567+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:31:50 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:31:55.558+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df403bc02eeac1965dbb43
+2015-02-14T13:31:55.732+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:31:58.968+0100 [mongosMain] connection accepted from 127.0.0.1:56938 #2 (1 connection now open)
+2015-02-14T13:32:01.964+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4041c02eeac1965dbb44
+2015-02-14T13:32:02.070+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:32:08.405+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4048c02eeac1965dbb45
+2015-02-14T13:32:08.511+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:32:14.770+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df404ec02eeac1965dbb46
+2015-02-14T13:32:14.944+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:32:20.848+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:32:20 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:32:21.172+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4054c02eeac1965dbb47
+2015-02-14T13:32:21.278+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:32:27.536+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df405bc02eeac1965dbb48
+2015-02-14T13:32:27.710+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:32:33.865+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4061c02eeac1965dbb49
+2015-02-14T13:32:33.972+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:32:40.123+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4067c02eeac1965dbb4a
+2015-02-14T13:32:40.230+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:32:46.424+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df406ec02eeac1965dbb4b
+2015-02-14T13:32:46.538+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:32:51.049+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:32:50 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:32:52.799+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4074c02eeac1965dbb4c
+2015-02-14T13:32:52.973+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:32:59.272+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df407ac02eeac1965dbb4d
+2015-02-14T13:32:59.412+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:33:05.628+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4081c02eeac1965dbb4e
+2015-02-14T13:33:05.739+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:33:12.034+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4087c02eeac1965dbb4f
+2015-02-14T13:33:12.208+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:33:18.565+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df408ec02eeac1965dbb50
+2015-02-14T13:33:18.705+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:33:21.340+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:33:21 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:33:24.515+0100 [conn2] SyncClusterConnection connecting to [localhost:57040]
+2015-02-14T13:33:24.515+0100 [conn2] SyncClusterConnection connecting to [localhost:57041]
+2015-02-14T13:33:24.516+0100 [conn2] SyncClusterConnection connecting to [localhost:57042]
+2015-02-14T13:33:25.002+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4094c02eeac1965dbb51
+2015-02-14T13:33:25.176+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:33:31.434+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df409bc02eeac1965dbb52
+2015-02-14T13:33:31.608+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:33:37.899+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40a1c02eeac1965dbb53
+2015-02-14T13:33:38.074+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:33:44.296+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40a8c02eeac1965dbb54
+2015-02-14T13:33:44.436+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:33:50.738+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40aec02eeac1965dbb55
+2015-02-14T13:33:50.849+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:33:51.577+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:33:51 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:33:57.107+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40b4c02eeac1965dbb56
+2015-02-14T13:33:57.247+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:34:03.535+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40bbc02eeac1965dbb57
+2015-02-14T13:34:03.677+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:34:09.852+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40c1c02eeac1965dbb58
+2015-02-14T13:34:09.963+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:34:16.223+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40c7c02eeac1965dbb59
+2015-02-14T13:34:16.363+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:34:21.724+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:34:21 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:34:22.519+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40cec02eeac1965dbb5a
+2015-02-14T13:34:22.626+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:34:28.773+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40d4c02eeac1965dbb5b
+2015-02-14T13:34:28.913+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:34:35.203+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40dac02eeac1965dbb5c
+2015-02-14T13:34:35.377+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:34:41.602+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40e1c02eeac1965dbb5d
+2015-02-14T13:34:41.716+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:34:48.005+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40e7c02eeac1965dbb5e
+2015-02-14T13:34:48.179+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:34:51.870+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:34:51 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:34:54.334+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40eec02eeac1965dbb5f
+2015-02-14T13:34:54.440+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:35:00.729+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40f4c02eeac1965dbb60
+2015-02-14T13:35:00.869+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:35:07.123+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df40fac02eeac1965dbb61
+2015-02-14T13:35:07.240+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:35:13.504+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4101c02eeac1965dbb62
+2015-02-14T13:35:13.610+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:35:19.765+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4107c02eeac1965dbb63
+2015-02-14T13:35:19.872+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:35:22.128+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:35:21 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:35:26.159+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df410dc02eeac1965dbb64
+2015-02-14T13:35:26.301+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:35:32.560+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4114c02eeac1965dbb65
+2015-02-14T13:35:32.666+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:35:38.822+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df411ac02eeac1965dbb66
+2015-02-14T13:35:38.928+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:35:45.298+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4120c02eeac1965dbb67
+2015-02-14T13:35:45.451+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:35:51.740+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4127c02eeac1965dbb68
+2015-02-14T13:35:51.914+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:35:52.336+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:35:52 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:35:58.178+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df412dc02eeac1965dbb69
+2015-02-14T13:35:58.352+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:36:04.511+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4134c02eeac1965dbb6a
+2015-02-14T13:36:04.618+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:36:10.913+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df413ac02eeac1965dbb6b
+2015-02-14T13:36:11.094+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:36:17.325+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4141c02eeac1965dbb6c
+2015-02-14T13:36:17.499+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:36:22.519+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:36:22 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:36:23.657+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4147c02eeac1965dbb6d
+2015-02-14T13:36:23.769+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:36:30.133+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df414dc02eeac1965dbb6e
+2015-02-14T13:36:30.273+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:36:36.557+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4154c02eeac1965dbb6f
+2015-02-14T13:36:36.697+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:36:42.985+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df415ac02eeac1965dbb70
+2015-02-14T13:36:43.130+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:36:49.282+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4161c02eeac1965dbb71
+2015-02-14T13:36:49.388+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:36:52.667+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:36:52 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:36:55.608+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4167c02eeac1965dbb72
+2015-02-14T13:36:55.756+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:37:01.913+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df416dc02eeac1965dbb73
+2015-02-14T13:37:02.027+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:37:08.312+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4174c02eeac1965dbb74
+2015-02-14T13:37:08.455+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:37:14.612+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df417ac02eeac1965dbb75
+2015-02-14T13:37:14.719+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:37:21.013+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4180c02eeac1965dbb76
+2015-02-14T13:37:21.187+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:37:22.864+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:37:22 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:37:27.412+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4187c02eeac1965dbb77
+2015-02-14T13:37:27.518+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:37:33.820+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df418dc02eeac1965dbb78
+2015-02-14T13:37:33.960+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:37:40.119+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4193c02eeac1965dbb79
+2015-02-14T13:37:40.293+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:37:46.584+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df419ac02eeac1965dbb7a
+2015-02-14T13:37:46.690+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:37:52.959+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41a0c02eeac1965dbb7b
+2015-02-14T13:37:53.099+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:37:53.099+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:37:52 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:37:59.261+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41a7c02eeac1965dbb7c
+2015-02-14T13:37:59.401+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:38:05.693+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41adc02eeac1965dbb7d
+2015-02-14T13:38:05.868+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:38:12.096+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41b3c02eeac1965dbb7e
+2015-02-14T13:38:12.236+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:38:18.532+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41bac02eeac1965dbb7f
+2015-02-14T13:38:18.639+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:38:23.323+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:38:23 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:38:24.901+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41c0c02eeac1965dbb80
+2015-02-14T13:38:25.076+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:38:31.234+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41c7c02eeac1965dbb81
+2015-02-14T13:38:31.340+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:38:37.570+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41cdc02eeac1965dbb82
+2015-02-14T13:38:37.685+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:38:43.945+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41d3c02eeac1965dbb83
+2015-02-14T13:38:44.051+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:38:50.318+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41dac02eeac1965dbb84
+2015-02-14T13:38:50.492+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:38:53.532+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:38:53 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:38:56.644+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41e0c02eeac1965dbb85
+2015-02-14T13:38:56.753+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:39:02.905+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41e6c02eeac1965dbb86
+2015-02-14T13:39:03.011+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:39:09.334+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41edc02eeac1965dbb87
+2015-02-14T13:39:09.406+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:39:15.571+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41f3c02eeac1965dbb88
+2015-02-14T13:39:15.746+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:39:21.920+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df41f9c02eeac1965dbb89
+2015-02-14T13:39:22.060+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:39:23.669+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:39:23 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:39:28.212+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4200c02eeac1965dbb8a
+2015-02-14T13:39:28.283+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:39:34.545+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4206c02eeac1965dbb8b
+2015-02-14T13:39:34.720+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:39:40.875+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df420cc02eeac1965dbb8c
+2015-02-14T13:39:40.987+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:39:47.204+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4212c02eeac1965dbb8d
+2015-02-14T13:39:47.344+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:39:53.603+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4219c02eeac1965dbb8e
+2015-02-14T13:39:53.709+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:39:53.822+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:39:53 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:39:59.977+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df421fc02eeac1965dbb8f
+2015-02-14T13:40:00.118+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:40:06.380+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4226c02eeac1965dbb90
+2015-02-14T13:40:06.521+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:40:12.816+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df422cc02eeac1965dbb91
+2015-02-14T13:40:12.990+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:40:19.212+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4232c02eeac1965dbb92
+2015-02-14T13:40:19.352+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:40:24.102+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:40:23 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:40:25.647+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4239c02eeac1965dbb93
+2015-02-14T13:40:25.788+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:40:31.940+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df423fc02eeac1965dbb94
+2015-02-14T13:40:32.053+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:40:38.339+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4246c02eeac1965dbb95
+2015-02-14T13:40:38.513+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:40:44.679+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df424cc02eeac1965dbb96
+2015-02-14T13:40:44.785+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:40:51.079+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4252c02eeac1965dbb97
+2015-02-14T13:40:51.219+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:40:54.328+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:40:54 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:40:57.411+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4259c02eeac1965dbb98
+2015-02-14T13:40:57.516+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:41:03.813+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df425fc02eeac1965dbb99
+2015-02-14T13:41:03.988+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:41:10.261+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4265c02eeac1965dbb9a
+2015-02-14T13:41:10.435+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:41:16.657+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df426cc02eeac1965dbb9b
+2015-02-14T13:41:16.767+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:41:23.062+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4272c02eeac1965dbb9c
+2015-02-14T13:41:23.202+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:41:24.472+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:41:24 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:41:29.394+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4279c02eeac1965dbb9d
+2015-02-14T13:41:29.581+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:41:35.737+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df427fc02eeac1965dbb9e
+2015-02-14T13:41:35.843+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:41:42.141+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4285c02eeac1965dbb9f
+2015-02-14T13:41:42.325+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:41:48.611+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df428cc02eeac1965dbba0
+2015-02-14T13:41:48.751+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:41:54.725+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:41:54 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:41:55.048+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4292c02eeac1965dbba1
+2015-02-14T13:41:55.193+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:42:01.482+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4299c02eeac1965dbba2
+2015-02-14T13:42:01.672+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:42:07.960+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df429fc02eeac1965dbba3
+2015-02-14T13:42:08.134+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:42:14.423+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42a6c02eeac1965dbba4
+2015-02-14T13:42:14.529+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:42:20.838+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42acc02eeac1965dbba5
+2015-02-14T13:42:20.944+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:42:24.971+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:42:24 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:42:27.237+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42b2c02eeac1965dbba6
+2015-02-14T13:42:27.384+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:42:33.614+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42b9c02eeac1965dbba7
+2015-02-14T13:42:33.796+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:42:40.097+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42bfc02eeac1965dbba8
+2015-02-14T13:42:40.210+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:42:46.498+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42c6c02eeac1965dbba9
+2015-02-14T13:42:46.673+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:42:53.066+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42ccc02eeac1965dbbaa
+2015-02-14T13:42:53.247+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:42:55.242+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:42:54 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:42:59.555+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42d3c02eeac1965dbbab
+2015-02-14T13:42:59.769+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:43:06.064+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42d9c02eeac1965dbbac
+2015-02-14T13:43:06.175+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:43:12.471+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42e0c02eeac1965dbbad
+2015-02-14T13:43:12.543+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:43:18.794+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42e6c02eeac1965dbbae
+2015-02-14T13:43:18.905+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:43:25.103+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42ecc02eeac1965dbbaf
+2015-02-14T13:43:25.175+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:43:25.387+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:43:25 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:43:31.331+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42f3c02eeac1965dbbb0
+2015-02-14T13:43:31.437+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:43:37.720+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42f9c02eeac1965dbbb1
+2015-02-14T13:43:37.894+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:43:44.184+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df42ffc02eeac1965dbbb2
+2015-02-14T13:43:44.324+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:43:50.475+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4306c02eeac1965dbbb3
+2015-02-14T13:43:50.589+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:43:55.606+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:43:55 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:43:56.856+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df430cc02eeac1965dbbb4
+2015-02-14T13:43:56.996+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:44:03.167+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4312c02eeac1965dbbb5
+2015-02-14T13:44:03.307+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:44:09.592+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4319c02eeac1965dbbb6
+2015-02-14T13:44:09.766+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:44:16.050+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df431fc02eeac1965dbbb7
+2015-02-14T13:44:16.190+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:44:22.342+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4326c02eeac1965dbbb8
+2015-02-14T13:44:22.482+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:44:25.867+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:44:25 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:44:28.743+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df432cc02eeac1965dbbb9
+2015-02-14T13:44:28.883+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:44:35.138+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4332c02eeac1965dbbba
+2015-02-14T13:44:35.312+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:44:41.681+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4339c02eeac1965dbbbb
+2015-02-14T13:44:41.855+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:44:48.110+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df433fc02eeac1965dbbbc
+2015-02-14T13:44:48.255+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:44:54.548+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4346c02eeac1965dbbbd
+2015-02-14T13:44:54.727+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:44:56.166+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:44:55 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:45:01.020+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df434cc02eeac1965dbbbe
+2015-02-14T13:45:01.199+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:45:07.482+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4353c02eeac1965dbbbf
+2015-02-14T13:45:07.623+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:45:14.002+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4359c02eeac1965dbbc0
+2015-02-14T13:45:14.142+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:45:20.444+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4360c02eeac1965dbbc1
+2015-02-14T13:45:20.590+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:45:26.463+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:45:26 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:45:26.885+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4366c02eeac1965dbbc2
+2015-02-14T13:45:27.025+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:45:33.178+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df436dc02eeac1965dbbc3
+2015-02-14T13:45:33.352+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:45:39.655+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4373c02eeac1965dbbc4
+2015-02-14T13:45:39.795+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:45:46.054+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4379c02eeac1965dbbc5
+2015-02-14T13:45:46.199+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:45:52.493+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4380c02eeac1965dbbc6
+2015-02-14T13:45:52.633+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:45:56.762+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:45:56 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:45:58.862+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4386c02eeac1965dbbc7
+2015-02-14T13:45:58.968+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:46:05.229+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df438cc02eeac1965dbbc8
+2015-02-14T13:46:05.378+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:46:11.673+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4393c02eeac1965dbbc9
+2015-02-14T13:46:11.847+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:46:18.130+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4399c02eeac1965dbbca
+2015-02-14T13:46:18.236+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:46:24.396+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43a0c02eeac1965dbbcb
+2015-02-14T13:46:24.543+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:46:26.975+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:46:26 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:46:30.705+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43a6c02eeac1965dbbcc
+2015-02-14T13:46:30.811+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:46:36.958+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43acc02eeac1965dbbcd
+2015-02-14T13:46:37.063+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:46:43.427+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43b3c02eeac1965dbbce
+2015-02-14T13:46:43.602+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:46:49.754+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43b9c02eeac1965dbbcf
+2015-02-14T13:46:49.834+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:46:56.128+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43bfc02eeac1965dbbd0
+2015-02-14T13:46:56.234+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:46:57.196+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:46:56 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:47:02.492+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43c6c02eeac1965dbbd1
+2015-02-14T13:47:02.632+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:47:08.918+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43ccc02eeac1965dbbd2
+2015-02-14T13:47:09.058+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:47:15.352+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43d3c02eeac1965dbbd3
+2015-02-14T13:47:15.459+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:47:21.723+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43d9c02eeac1965dbbd4
+2015-02-14T13:47:21.863+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:47:27.337+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:47:27 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:47:28.140+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43dfc02eeac1965dbbd5
+2015-02-14T13:47:28.314+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:47:34.475+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43e6c02eeac1965dbbd6
+2015-02-14T13:47:34.621+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:47:40.867+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43ecc02eeac1965dbbd7
+2015-02-14T13:47:41.006+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:47:47.290+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43f3c02eeac1965dbbd8
+2015-02-14T13:47:47.430+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:47:53.694+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43f9c02eeac1965dbbd9
+2015-02-14T13:47:53.800+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:47:57.487+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:47:57 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:48:00.032+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df43ffc02eeac1965dbbda
+2015-02-14T13:48:00.104+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:48:06.428+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4406c02eeac1965dbbdb
+2015-02-14T13:48:06.534+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:48:12.875+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df440cc02eeac1965dbbdc
+2015-02-14T13:48:12.981+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:48:19.232+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4412c02eeac1965dbbdd
+2015-02-14T13:48:19.304+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:48:25.456+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4419c02eeac1965dbbde
+2015-02-14T13:48:25.562+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:48:27.690+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:48:27 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:48:31.728+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df441fc02eeac1965dbbdf
+2015-02-14T13:48:31.868+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:48:38.186+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4425c02eeac1965dbbe0
+2015-02-14T13:48:38.326+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:48:44.581+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df442cc02eeac1965dbbe1
+2015-02-14T13:48:44.721+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:48:51.014+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4432c02eeac1965dbbe2
+2015-02-14T13:48:51.160+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:48:57.520+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4439c02eeac1965dbbe3
+2015-02-14T13:48:57.626+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:48:57.911+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:48:57 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:49:03.889+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df443fc02eeac1965dbbe4
+2015-02-14T13:49:04.029+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:49:10.297+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4446c02eeac1965dbbe5
+2015-02-14T13:49:10.450+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:49:16.787+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df444cc02eeac1965dbbe6
+2015-02-14T13:49:16.927+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:49:23.223+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4452c02eeac1965dbbe7
+2015-02-14T13:49:23.329+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:49:28.072+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:49:27 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:49:29.624+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4459c02eeac1965dbbe8
+2015-02-14T13:49:29.798+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:49:36.063+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df445fc02eeac1965dbbe9
+2015-02-14T13:49:36.237+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:49:42.467+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4466c02eeac1965dbbea
+2015-02-14T13:49:42.573+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:49:48.865+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df446cc02eeac1965dbbeb
+2015-02-14T13:49:49.039+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:49:55.326+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4473c02eeac1965dbbec
+2015-02-14T13:49:55.398+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:49:58.267+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:49:58 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:50:01.669+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4479c02eeac1965dbbed
+2015-02-14T13:50:01.851+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:50:07.998+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df447fc02eeac1965dbbee
+2015-02-14T13:50:08.104+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:50:14.383+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4486c02eeac1965dbbef
+2015-02-14T13:50:14.530+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:50:20.788+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df448cc02eeac1965dbbf0
+2015-02-14T13:50:20.895+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:50:27.042+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4492c02eeac1965dbbf1
+2015-02-14T13:50:27.153+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:50:28.463+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:50:28 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:50:33.282+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4499c02eeac1965dbbf2
+2015-02-14T13:50:33.354+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:50:39.502+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df449fc02eeac1965dbbf3
+2015-02-14T13:50:39.608+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:50:45.834+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44a5c02eeac1965dbbf4
+2015-02-14T13:50:45.974+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:50:52.268+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44abc02eeac1965dbbf5
+2015-02-14T13:50:52.442+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:50:58.673+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44b2c02eeac1965dbbf6
+2015-02-14T13:50:58.707+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:50:58 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:50:58.813+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:51:05.106+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44b8c02eeac1965dbbf7
+2015-02-14T13:51:05.178+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:51:11.335+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44bfc02eeac1965dbbf8
+2015-02-14T13:51:11.476+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:51:17.759+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44c5c02eeac1965dbbf9
+2015-02-14T13:51:17.899+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:51:24.085+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44cbc02eeac1965dbbfa
+2015-02-14T13:51:24.225+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:51:28.980+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:51:28 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:51:30.496+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44d2c02eeac1965dbbfb
+2015-02-14T13:51:30.670+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:51:36.971+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44d8c02eeac1965dbbfc
+2015-02-14T13:51:37.116+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:51:43.390+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44dfc02eeac1965dbbfd
+2015-02-14T13:51:43.535+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:51:49.831+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44e5c02eeac1965dbbfe
+2015-02-14T13:51:50.005+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:51:56.295+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44ecc02eeac1965dbbff
+2015-02-14T13:51:56.413+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:51:59.248+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:51:58 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:52:02.611+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44f2c02eeac1965dbc00
+2015-02-14T13:52:02.717+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:52:09.049+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44f8c02eeac1965dbc01
+2015-02-14T13:52:09.224+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:52:15.496+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df44ffc02eeac1965dbc02
+2015-02-14T13:52:15.602+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:52:21.872+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4505c02eeac1965dbc03
+2015-02-14T13:52:21.978+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:52:28.205+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df450bc02eeac1965dbc04
+2015-02-14T13:52:28.348+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:52:29.387+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:52:29 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:52:34.588+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4512c02eeac1965dbc05
+2015-02-14T13:52:34.730+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:52:40.894+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4518c02eeac1965dbc06
+2015-02-14T13:52:41.007+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:52:47.303+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df451fc02eeac1965dbc07
+2015-02-14T13:52:47.478+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:52:53.644+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4525c02eeac1965dbc08
+2015-02-14T13:52:53.788+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:52:59.599+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:52:59 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:52:59.951+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df452bc02eeac1965dbc09
+2015-02-14T13:53:00.057+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:53:06.273+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4532c02eeac1965dbc0a
+2015-02-14T13:53:06.416+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:53:12.615+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4538c02eeac1965dbc0b
+2015-02-14T13:53:12.797+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:53:19.086+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df453ec02eeac1965dbc0c
+2015-02-14T13:53:19.301+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:53:25.589+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4545c02eeac1965dbc0d
+2015-02-14T13:53:25.763+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:53:29.863+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:53:29 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:53:32.055+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df454bc02eeac1965dbc0e
+2015-02-14T13:53:32.230+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:53:38.545+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4552c02eeac1965dbc0f
+2015-02-14T13:53:38.753+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:53:45.047+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4558c02eeac1965dbc10
+2015-02-14T13:53:45.221+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:53:51.599+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df455fc02eeac1965dbc11
+2015-02-14T13:53:51.778+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:53:58.045+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4565c02eeac1965dbc12
+2015-02-14T13:53:58.185+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:54:00.139+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:53:59 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:54:04.484+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df456cc02eeac1965dbc13
+2015-02-14T13:54:04.625+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:54:11.016+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4572c02eeac1965dbc14
+2015-02-14T13:54:11.191+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:54:17.481+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4579c02eeac1965dbc15
+2015-02-14T13:54:17.655+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:54:23.955+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df457fc02eeac1965dbc16
+2015-02-14T13:54:24.129+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:54:30.383+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:54:30 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:54:30.383+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4586c02eeac1965dbc17
+2015-02-14T13:54:30.523+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:54:36.817+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df458cc02eeac1965dbc18
+2015-02-14T13:54:36.991+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:54:43.268+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4592c02eeac1965dbc19
+2015-02-14T13:54:43.442+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:54:49.776+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4599c02eeac1965dbc1a
+2015-02-14T13:54:49.921+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:54:56.206+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df459fc02eeac1965dbc1b
+2015-02-14T13:54:56.379+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:55:00.582+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:55:00 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:55:02.648+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45a6c02eeac1965dbc1c
+2015-02-14T13:55:02.822+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:55:09.150+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45acc02eeac1965dbc1d
+2015-02-14T13:55:09.290+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:55:15.562+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45b3c02eeac1965dbc1e
+2015-02-14T13:55:15.747+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:55:22.048+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45b9c02eeac1965dbc1f
+2015-02-14T13:55:22.222+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:55:28.582+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45c0c02eeac1965dbc20
+2015-02-14T13:55:28.722+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:55:30.846+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:55:30 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:55:34.922+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45c6c02eeac1965dbc21
+2015-02-14T13:55:35.028+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:55:41.331+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45cdc02eeac1965dbc22
+2015-02-14T13:55:41.505+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:55:47.863+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45d3c02eeac1965dbc23
+2015-02-14T13:55:47.972+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:55:54.333+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45d9c02eeac1965dbc24
+2015-02-14T13:55:54.515+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:56:00.814+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45e0c02eeac1965dbc25
+2015-02-14T13:56:00.988+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:56:01.129+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:56:00 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:56:07.272+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45e6c02eeac1965dbc26
+2015-02-14T13:56:07.447+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:56:13.600+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45edc02eeac1965dbc27
+2015-02-14T13:56:13.672+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:56:19.916+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45f3c02eeac1965dbc28
+2015-02-14T13:56:20.022+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:56:26.188+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df45fac02eeac1965dbc29
+2015-02-14T13:56:26.294+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:56:31.279+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:56:31 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:56:32.450+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4600c02eeac1965dbc2a
+2015-02-14T13:56:32.556+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:56:38.708+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4606c02eeac1965dbc2b
+2015-02-14T13:56:38.848+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:56:45.014+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df460cc02eeac1965dbc2c
+2015-02-14T13:56:45.120+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:56:51.288+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4613c02eeac1965dbc2d
+2015-02-14T13:56:51.394+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:56:57.677+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4619c02eeac1965dbc2e
+2015-02-14T13:56:57.851+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:57:01.543+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:57:01 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:57:04.143+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df461fc02eeac1965dbc2f
+2015-02-14T13:57:04.215+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:57:10.475+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4626c02eeac1965dbc30
+2015-02-14T13:57:10.615+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:57:16.900+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df462cc02eeac1965dbc31
+2015-02-14T13:57:17.042+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:57:23.270+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4633c02eeac1965dbc32
+2015-02-14T13:57:23.411+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:57:29.696+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4639c02eeac1965dbc33
+2015-02-14T13:57:29.836+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:57:31.688+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:57:31 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:57:36.162+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df463fc02eeac1965dbc34
+2015-02-14T13:57:36.268+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:57:42.627+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4646c02eeac1965dbc35
+2015-02-14T13:57:42.808+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:57:49.100+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df464cc02eeac1965dbc36
+2015-02-14T13:57:49.239+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:57:55.617+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4653c02eeac1965dbc37
+2015-02-14T13:57:55.723+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:58:01.875+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:58:01 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:58:01.913+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4659c02eeac1965dbc38
+2015-02-14T13:58:02.026+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:58:08.252+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4660c02eeac1965dbc39
+2015-02-14T13:58:08.392+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:58:14.699+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4666c02eeac1965dbc3a
+2015-02-14T13:58:14.873+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:58:21.266+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df466cc02eeac1965dbc3b
+2015-02-14T13:58:21.406+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:58:27.701+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4673c02eeac1965dbc3c
+2015-02-14T13:58:27.876+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:58:32.078+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:58:31 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:58:34.133+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4679c02eeac1965dbc3d
+2015-02-14T13:58:34.240+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:58:40.617+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4680c02eeac1965dbc3e
+2015-02-14T13:58:40.757+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:58:47.009+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4686c02eeac1965dbc3f
+2015-02-14T13:58:47.189+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:58:53.483+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df468dc02eeac1965dbc40
+2015-02-14T13:58:53.623+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:58:59.883+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4693c02eeac1965dbc41
+2015-02-14T13:58:59.989+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:59:02.212+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:59:02 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:59:06.149+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4699c02eeac1965dbc42
+2015-02-14T13:59:06.331+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:59:12.483+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46a0c02eeac1965dbc43
+2015-02-14T13:59:12.589+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:59:18.852+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46a6c02eeac1965dbc44
+2015-02-14T13:59:18.997+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:59:25.266+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46acc02eeac1965dbc45
+2015-02-14T13:59:25.406+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:59:31.754+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46b3c02eeac1965dbc46
+2015-02-14T13:59:31.929+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:59:32.346+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 13:59:32 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T13:59:38.080+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46b9c02eeac1965dbc47
+2015-02-14T13:59:38.186+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:59:44.447+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46c0c02eeac1965dbc48
+2015-02-14T13:59:44.590+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:59:50.958+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46c6c02eeac1965dbc49
+2015-02-14T13:59:51.099+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T13:59:57.382+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46cdc02eeac1965dbc4a
+2015-02-14T13:59:57.522+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:00:02.523+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 14:00:02 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T14:00:03.763+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46d3c02eeac1965dbc4b
+2015-02-14T14:00:03.903+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:00:10.068+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46d9c02eeac1965dbc4c
+2015-02-14T14:00:10.182+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:00:16.467+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46e0c02eeac1965dbc4d
+2015-02-14T14:00:16.607+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:00:22.793+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46e6c02eeac1965dbc4e
+2015-02-14T14:00:22.935+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:00:29.087+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46ecc02eeac1965dbc4f
+2015-02-14T14:00:29.193+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:00:32.788+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 14:00:32 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T14:00:35.359+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46f3c02eeac1965dbc50
+2015-02-14T14:00:35.432+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:00:41.588+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46f9c02eeac1965dbc51
+2015-02-14T14:00:41.729+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:00:48.089+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df46ffc02eeac1965dbc52
+2015-02-14T14:00:48.229+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:00:54.522+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4706c02eeac1965dbc53
+2015-02-14T14:00:54.702+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:01:00.857+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df470cc02eeac1965dbc54
+2015-02-14T14:01:00.998+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:01:02.948+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 14:01:02 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T14:01:07.219+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4712c02eeac1965dbc55
+2015-02-14T14:01:07.359+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:01:13.523+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4719c02eeac1965dbc56
+2015-02-14T14:01:13.629+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:01:19.860+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df471fc02eeac1965dbc57
+2015-02-14T14:01:19.932+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:01:26.250+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4725c02eeac1965dbc58
+2015-02-14T14:01:26.393+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:01:32.545+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df472cc02eeac1965dbc59
+2015-02-14T14:01:32.651+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:01:33.150+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 14:01:32 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T14:01:38.790+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4732c02eeac1965dbc5a
+2015-02-14T14:01:38.906+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:01:45.096+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4738c02eeac1965dbc5b
+2015-02-14T14:01:45.168+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:01:51.320+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df473fc02eeac1965dbc5c
+2015-02-14T14:01:51.431+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:01:57.680+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4745c02eeac1965dbc5d
+2015-02-14T14:01:57.755+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:02:03.298+0100 [LockPinger] cluster localhost:57040,localhost:57041,localhost:57042 pinged successfully at Sat Feb 14 14:02:03 2015 by distributed lock pinger 'localhost:57040,localhost:57041,localhost:57042/ubuntu-pc:27017:1423916445:1804289383', sleeping for 30000ms
+2015-02-14T14:02:04.005+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df474bc02eeac1965dbc5e
+2015-02-14T14:02:04.112+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:02:10.340+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' acquired, ts : 54df4752c02eeac1965dbc5f
+2015-02-14T14:02:10.515+0100 [Balancer] distributed lock 'balancer/ubuntu-pc:27017:1423916445:1804289383' unlocked. 
+2015-02-14T14:02:12.039+0100 [conn2] terminating, shutdown command received
+2015-02-14T14:02:12.039+0100 [conn2] dbexit: shutdown called rc:0 shutdown called
